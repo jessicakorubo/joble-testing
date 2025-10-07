@@ -1,0 +1,122 @@
+.footer {
+  margin-top: 150px;;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 80px 80px;
+  flex-wrap: wrap;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+  min-width: 190px;
+  max-width: fit-content;
+}
+
+/* Logo Section */
+.footer-logo-img {
+  width: 160px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.newsletter-text {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+/* Newsletter input */
+.input_email {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+.input_email input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  font-size: 14px;
+}
+
+.submit_email {
+  background-color: #07c0ea;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit_email:hover {
+  background-color: #05a9ce;
+}
+
+/* Section Headings */
+.footer-column h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 6px;
+}
+
+/* Links */
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin: 6px 0;
+  color: #333;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.footer-column a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  color: #07c0ea;
+}
+
+/* ISO section */
+.iso {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.iso img {
+  width: 60px;
+  height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 60px 40px;
+  }
+
+  .footer-column {
+    width: 100%;
+  }
+
+  .input_email {
+    max-width: 100%;
+  }
+}
