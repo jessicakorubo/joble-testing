@@ -480,9 +480,12 @@ h2 {
     padding: 10px;
     border-radius: 13.757px;
 }
-.features-items div{
+.feature-items div{
     padding: 10px 15px;
-    background-color: red;
+    background-color: #F8F8F8;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin-top: 10px;
 }
 
 /* explicit placement to create the mosaic */
@@ -1080,5 +1083,8 @@ h3 {
     }
     .features-section {
         width: 90%;
+    }
+    .stacks {
+        flex-direction: column;
     }
 }
