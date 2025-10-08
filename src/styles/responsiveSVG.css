@@ -1,0 +1,21 @@
+.resp-svg {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 0;
+    /* SVG stays in the background */
+}
+.absolute {
+    position: absolute;
+    top: 50%;
+    /* Centers vertically */
+    left: 50%;
+    /* Centers horizontally */
+    transform: translate(-50%, -50%);
+    width: 60%;
+    text-align: center;
+    color: #ffffff;
+    /* Matches your Figma text color */
+    z-index: 1;
+}

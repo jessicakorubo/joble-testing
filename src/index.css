@@ -64,6 +64,7 @@ html, body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  font-family: 'Bricolage Grotesque', sans-serif;
 }
 
 /* button {
@@ -96,4 +97,18 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.active-nav {
+  color: var(--primary-color);
+}
+
+
+:root {
+    --primary-color: #1AC3E9;
+    /* Example primary color */
+    --hover-color: #0056b3;
+    /* Darker shade for hover effects */
+    --text-color: #07C0EA;
+    /* Text color */
 }

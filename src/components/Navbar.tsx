@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import '../styles/navbar.css';
 import logo from '../assets/logo.png';
 
@@ -36,12 +37,48 @@ const Navbar = () => {
         </div>
         <div className='navItems'>
           <ul>
-            <li><a href="">Products</a></li>
-            <li><a href="">Use Cases</a></li>
-            <li><a href="">Pricing</a></li>
-            <li><a href="">Resources</a></li>
-            <li><a href="">Live demo</a></li>
-          </ul>
+  <li>
+    <NavLink
+      to="/"
+      end
+      className={({ isActive }) => (isActive ? "active-link" : "")}
+    >
+      Products
+    </NavLink>
+  </li>
+  <li>
+    <NavLink
+      to="/use-cases"
+      className={({ isActive }) => (isActive ? "active-link" : "")}
+    >
+      Use Cases
+    </NavLink>
+  </li>
+  <li>
+    <NavLink
+      to="/pricing"
+      className={({ isActive }) => (isActive ? "active-link" : "")}
+    >
+      Pricing
+    </NavLink>
+  </li>
+  <li>
+    <NavLink
+      to="/resources"
+      className={({ isActive }) => (isActive ? "active-link" : "")}
+    >
+      Resources
+    </NavLink>
+  </li>
+  <li>
+    <NavLink
+      to="/live-demo"
+      className={({ isActive }) => (isActive ? "active-link" : "")}
+    >
+      Live Demo
+    </NavLink>
+  </li>
+</ul>
         </div>
         <div className='buttons'>
           <button className='sales'>Contact Sales</button>

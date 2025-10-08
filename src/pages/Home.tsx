@@ -28,6 +28,7 @@ import platform from "../assets/platform.svg";
 import demoVideo from "../assets/joble_video.mp4";
 import outbound2 from "../assets/outbound2.png";
 import joble_svg from "../assets/joble_svg.svg";
+import ResponsiveSVG from "../components/ResponsiveSVG";
 
 const Home = () => {
   const faqData = [
@@ -211,43 +212,52 @@ const Home = () => {
               className="service"
               onClick={() => handleImageChange(outbound2)}
             >
-              <h3>Call Answering</h3>
+              <h3><b>Inbound AI Receptionist</b> </h3>
               <p>
-                <b>Never miss a call, Book more meetings. Cut no shows.</b>
+                <b>Answers every call. Qualifies. Books meetings. </b>
               </p>
               <ul>
                 <li>Real time calendar sync</li>
                 <li>Instant warm transfer</li>
                 <li>Call recording & transcript (optional)</li>
               </ul>
+              <p className="outcome">
+                Outcome: <br /> More bookings, faster response, zero missed calls
+              </p>
             </div>
             <div
               className="service"
               onClick={() => handleImageChange(outboundAI)}
             >
-              <h3>Call Answering</h3>
+              <h3> <b>Outbound AI Caller</b>  </h3>
               <p>
-                <b>Never miss a call, Book more meetings. Cut no shows.</b>
+                <b>Calls the lists you don’t have time to call. .</b>
               </p>
               <ul>
-                <li>Real time calendar sync</li>
-                <li>Instant warm transfer</li>
-                <li>Call recording & transcript (optional)</li>
+                <li>Show-up reduction: reminders, confirmations, reschedules</li>
+                <li>Instant warm transferRevenue outreach: re-engage leads, promote offers </li>
+                <li>Surveys: collect voice responses when internet is weak</li>
               </ul>
+              <p className="outcome">
+                Outcome: <br />Fewer no-shows. More pipeline. Real data.
+              </p>
             </div>
             <div
               className="service"
               onClick={() => handleImageChange(phone_statement)}
             >
-              <h3>Call Answering</h3>
+              <h3> <b>Phone Storefront</b> </h3>
               <p>
-                <b>Never miss a call, Book more meetings. Cut no shows.</b>
+                <b>Let customers book or order by phone.</b>
               </p>
               <ul>
-                <li>Real time calendar sync</li>
-                <li>Instant warm transfer</li>
-                <li>Call recording & transcript (optional)</li>
+                <li>Upload services or products </li>
+                <li>Guided voice flow, no web friction </li>
+                <li>Perfect for professional services, clinics, salons, repairs, local services</li>
               </ul>
+              <p className="outcome">
+                Outcome: <br /> More conversions. Less drop-off. Happier customers.
+              </p>
             </div>
           </div>
           <div className="service-pics">
@@ -572,13 +582,13 @@ const Home = () => {
           <div className="pricing-card">
             <img src={call} alt="" className="icon" />
             <h3>Usage</h3>
-            <p>€1.50/min (NL)</p>
-            <p>€1.50/min (UK)</p>
+            <h3> €1.50/min (NL)</h3>
+            <h3>€1.50/min (UK)</h3>
           </div>
           <div className="pricing-card">
             <img src={calendar2} alt="" className="icon" />
             <h3>Per booking added</h3>
-            <p>€0.50/meeting</p>
+            <h3>€0.50/meeting</h3>
           </div>
           <div className="pricing-card">
             <img src={platform} alt="" className="icon" />
@@ -666,33 +676,8 @@ const Home = () => {
           ))}
         </div>
         <div className="curve">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="1440"
-            height="391"
-            viewBox="0 0 1440 391"
-            fill="none"
-          >
-            <path
-              d="M0 0H1440V283.256C849.789 427.028 535.133 426.801 0 283.256V0Z"
-              fill="url(#paint0_linear_2208_15464)"
-            />
-            <defs>
-              <linearGradient
-                id="paint0_linear_2208_15464"
-                x1="720"
-                y1="33.5"
-                x2="1549.47"
-                y2="237.215"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stop-color="#07C0EA" />
-                <stop offset="1" stop-color="white" />
-              </linearGradient>
-            </defs>
-          </svg>
-
-          <div className="curve-text">
+          <ResponsiveSVG className="resp-svg">
+            <div className="curve-text">
             <h1>Ready to stop losing revenue to missed calls and no-shows?</h1>
             <div className="buttons">
               <button className="type_button" id="white_button">
@@ -711,6 +696,9 @@ const Home = () => {
               </p>
             </div>
           </div>
+          </ResponsiveSVG>
+
+          
         </div>
       </MainLayout>
     </div>

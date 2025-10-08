@@ -164,8 +164,8 @@ body {
 .card p {
     color: #002D56;
     text-align: center;
-    font-family: "tt Hoves Pro", sans-serif;
-    font-size: 24px;
+    font-family: "TT Hoves Pro Bold", sans-serif;
+    font-size: 20px;
     font-style: normal;
     font-weight: 900;
     font-weight: bold;
@@ -187,15 +187,18 @@ body {
     background: #fff;
     border-radius: 12px;
     padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
     cursor: pointer;
     z-index: -1;
+    flex: 1;
+    text-align: left;
+    margin-bottom: 50px;
 }
 
 .service:hover {
     transform: translateY(-6px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     z-index: -1;
 }
 
@@ -208,10 +211,20 @@ body {
     padding: 30px 6rem;
 }
 
+p.outcome {
+    opacity: 0.7;
+}
+
 .service-pics {
     width: max-content;
     height: 100%;
     z-index: -1;
+}
+
+.service h3 {
+    font-weight: 900;
+    font-size: 24px;
+    font-family: 'TT Hoves Pro Bold', sans-serif;
 }
 
 .service-pics img {
@@ -235,11 +248,6 @@ body {
     animation: fadeIn 0.6s ease-in forwards;
 }
 
-.service {
-    flex: 1;
-    text-align: left;
-    margin-bottom: 50px;
-}
 
 .landing_section {
     position: relative;
@@ -318,7 +326,7 @@ body {
 .result-cards .result-card {
     text-align: left;
     min-width: 262px;
-    max-height: 170px;
+    max-height: fit-content;
     border-radius: 20px;
     padding: 20px;
     background: #F7F7F7;
@@ -412,7 +420,7 @@ h2 {
 }
 
 .type_button {
-    margin-top: 40px;
+    margin-top: 25px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -470,17 +478,20 @@ h2 {
     justify-content: center;
     align-items: center;
 }
-.feature-grid h3{
+
+.feature-grid h3 {
     color: #333;
     font-family: 'TT Hoves Pro', sans-serif;
     font-size: 25px;
 }
+
 .feature-icon {
     background-color: #B9FFD4;
     padding: 10px;
     border-radius: 13.757px;
 }
-.feature-items div{
+
+.feature-items div {
     padding: 10px 15px;
     background-color: #F8F8F8;
     border-radius: 5px;
@@ -564,7 +575,7 @@ h2 {
 .feature-selection::before {
     content: "";
     position: absolute;
-    left: 10px;
+    left: 0;
     top: 50%;
     transform: translateY(-50%);
     width: 16px;
@@ -646,7 +657,6 @@ h2 {
 
 .gains {
     width: 35%;
-
 }
 
 .gain-joble {
@@ -680,13 +690,11 @@ h2 {
     padding: 5px;
     border: 2px dashed var(--primary-color);
     border-radius: 38px;
-
 }
 
 .gain-bg {
     background: #07C0EA;
-
-    height: 150px;
+    height: max-content;
     padding: 30px;
     border-radius: 38px
 }
@@ -708,7 +716,7 @@ h2 {
 .pricing-card {
     border-radius: 17.907px;
     width: 250px;
-    height: 240px;
+    min-height: fit-content;
     font-family: 'TT Hoves Pro', sans-serif;
     background: #FFF;
     padding: 25px;
@@ -725,13 +733,15 @@ h2 {
     line-height: 5px;
 }
 
-.pricing-card p,
-h3 {
+.pricing-card h3 {
     font-size: 15px;
     font-weight: 900;
     font-style: normal;
-    font-weight: 500;
-    font-family: 'TT Hoves Pro', sans-serif;
+    font-family: 'TT Hoves Pro Bold', sans-serif;
+}
+
+.pricing-card p {
+    font-size: 14px !important;
 }
 
 .pricing-button {
@@ -875,36 +885,14 @@ h3 {
 }
 
 .curve {
-    position: relative;
+    /* position: relative; */
     /* This makes .curve the positioning container */
     width: 100%;
     overflow: hidden;
     /* Ensures nothing leaks outside */
 }
 
-.curve svg {
-    width: 100%;
-    height: auto;
-    display: block;
-    position: relative;
-    z-index: 0;
-    /* SVG stays in the background */
-}
 
-.curve-text {
-    position: absolute;
-    top: 50%;
-    /* Centers vertically */
-    left: 50%;
-    /* Centers horizontally */
-    transform: translate(-50%, -50%);
-    width: 60%;
-    text-align: center;
-    color: #ffffff;
-    /* Matches your Figma text color */
-    z-index: 1;
-    /* Places text on top of the SVG */
-}
 
 .curve-text h1 {
     font-family: "Bricolage Grotesque", sans-serif;
@@ -923,13 +911,13 @@ h3 {
 .buttons {
     display: flex;
     justify-content: center;
+    gap: 10px;
 }
 
 #transparent_btn {
     background: transparent;
     border: 2px solid white;
     color: white;
-    padding: 20px;
 }
 
 .email a {
@@ -990,7 +978,7 @@ h3 {
 }
 
 /* MEDIA SCREEN WIDTH */
-@media (max-width: 890px)  {
+@media (max-width: 890px) {
     .hero-section {
         flex-direction: column;
         text-align: center;
@@ -999,92 +987,213 @@ h3 {
         margin-top: 120px;
         padding: 20px;
     }
-    .left-hero-section, .right-hero-section {
+
+    .left-hero-section,
+    .right-hero-section {
         width: 100%;
         padding: 10px;
         align-items: center;
         text-align: center;
     }
+
     .hero-text h1 {
-        text-align: center ;
+        text-align: center;
     }
+
     .outbound-line {
         text-align: center;
     }
+
     .hero-text p {
         text-align: center;
         font-size: 16px;
     }
+
     .hero-buttons {
         flex-direction: column;
     }
+
     .service-section {
         flex-direction: column;
         padding: 20px;
     }
+
     .cards {
         flex-wrap: wrap;
     }
-    h1, h2 {
+
+    h1,
+    h2 {
         text-align: center;
     }
+
     .white_bg_button {
         margin-top: auto;
     }
+
     .switch h1 {
         font-size: 43px;
         padding: 0 20px;
     }
+
     .switch p {
         font-size: 16px;
         padding: 0 30px;
     }
+
     .joble h2 {
         font-size: 43px;
         font-family: 'Bricolage Grotesque', sans-serif;
         letter-spacing: -2px;
     }
+
     .landing h3 {
         width: 90%;
     }
+
     .results h1 {
         font-size: 43px;
         padding: 0 20px;
     }
+
     .result-cards .result-card {
         max-height: fit-content;
+        padding: 20px;
     }
+
     .results .mileage {
         font-size: 14px;
         text-align: center;
     }
+
     .steps {
         flex-direction: column;
     }
+
     .step {
         padding: 10px;
         max-width: 70%;
     }
+
     .step p {
         font-size: 'TT Hoves Pro', sans-serif;
         font-weight: 700;
     }
+
     .roi h1 {
         font-size: 43px;
     }
+
     .roi_math {
         flex-direction: column;
     }
+
     .example {
         margin-top: 20px;
     }
+
     .compliance h1 {
         font-size: 43px;
     }
+
     .features-section {
         width: 90%;
     }
+
     .stacks {
         flex-direction: column;
+    }
+
+    .stack {
+        margin: auto;
+    }
+
+    .feature-selection::before {
+        left: 0;
+    }
+
+    .pricing {
+        flex-direction: column;
+    }
+
+    .pricing-card {
+        margin: auto;
+    }
+
+    .pricing-card p {
+        font-size: 14px;
+    }
+
+    .video-container {
+        flex-direction: column;
+    }
+
+    .vid-text {
+        width: 85%;
+    }
+
+    .vid-text h2 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .vid-text p {
+        font-size: 12px;
+        font-family: 'TT Hoves Pro', sans-serif;
+        padding: 10px 15px;
+    }
+
+    .video-container {
+        margin: auto;
+    }
+
+    .vid-button {
+        margin: 30px auto;
+    }
+
+    .video-container .type_button {
+        margin: auto;
+        width: 100%;
+    }
+
+    .video-frame {
+        width: 80%;
+        background-image: url(../assets/video-bg.png);
+    }
+
+    .testimonials {
+        width: 90%;
+    }
+
+    .testimonials h1 {
+        font-size: 30px;
+    }
+
+    .proof {
+        width: 90%;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 500;
+    }
+
+    .faq {
+        padding: 0 20px;
+    }
+
+    .curve .desktop {
+        display: none;
+    }
+    /* .curve .mobile {
+        display: block;
+    } */
+    .curve-text h1 {
+        line-height: 35px;
+        font-size: 32px;
+    }
+    .curve-text .buttons {
+        flex-direction: column;
+    }
+    .curve-text .type_button{
+        margin-top: 0;
     }
 }

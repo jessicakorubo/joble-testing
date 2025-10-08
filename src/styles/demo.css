@@ -1,0 +1,168 @@
+.demo_highlight {
+    color: var(--primary-color);
+}
+.demo_hero {
+    padding: 50px 20px;
+    text-align: center;
+}
+.demo-calls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.demo-calls p {
+    margin: 0;
+    font-size: 27px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 900;
+}
+.demo-calls img {
+    margin: 0;
+}
+.demo_hero #white_button {
+    border: 1px solid var(--primary-color);
+    align-items: center;
+    margin-top: 60px !important;
+}
+#white_button svg {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.tc {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'TT Hoves Pro', sans-serif;
+    margin-top: 40px;
+}
+
+/* DEMO MODAL */
+.modal_overlay {
+    padding: 30px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    background-color: #fff;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    border-radius: 15px;
+    transform: translate(-50%, -70%);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+form input {
+    padding: 10px 20px;
+    border-radius: 25px;
+    height: 65px;
+    border: 1px solid #E0E9F4;
+}
+.modal-close {
+   cursor: pointer;
+    text-align: right;
+}
+
+.modal-close button {
+    border: none;
+    cursor: pointer;
+    background: none;
+
+}
+.consent-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.demo-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.demo-pic h3 {
+    margin: 0 auto;
+}
+.consent-buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 10px;
+}
+.consent-buttons #white_button {
+    border: 1px solid var(--primary-color);
+    align-items: center;
+}
+/* CouNTRY LIST */
+/* make sure the phone wrapper can contain an absolutely-positioned dropdown */
+.react-tel-input {
+  position: relative !important;
+  z-index: 1; /* baseline; the country-list will use a much higher z-index */
+}
+
+/* prevent the modal from clipping the dropdown */
+.modal-content, .modal-overlay {
+  /* if your modal uses overflow: hidden, allow visible for dropdown */
+  overflow: visible !important;
+  z-index: 2000; /* modal base z-index */
+}
+.react-tel-input .flag-dropdown {
+    left: 90%;
+    border: none !important;
+    background-color: transparent !important;
+}
+/* MAIN: widen & position the country list and ensure it appears above modal */
+.react-tel-input .flag-dropdown .country-list,
+.react-tel-input .flag-dropdown.open .country-list {
+  position: absolute !important;
+  top: calc(100% + 8px) !important;      /* place below the input */
+  width: 360px !important;               /* desired width */
+  max-width: calc(100vw - 32px) !important; /* responsive cap */
+  min-width: 260px !important;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15) !important;
+  border-radius: 8px !important;
+  overflow: auto !important;
+  max-height: 48vh !important;           /* allow scrolling if long */
+  z-index: 99999 !important;             /* must be above modal */
+  background: #fff !important;
+}
+.react-tel-input .flag-dropdown .country-list, .react-tel-input .flag-dropdown.open .country-list{
+    right: 0 !important
+}
+/* nowrap for items so country names stay on one line */
+.react-tel-input .country-list .country,
+.react-tel-input .country-list li {
+  white-space: nowrap !important;
+}
+
+/* optional: if you want the dropdown right-aligned instead */
+.react-tel-input .flag-dropdown.open.right .country-list {
+  left: auto !important;
+  right: 0 !important;
+}
+
+/* quick debug to visualize the list bounds (remove when done) */
+.react-tel-input .country-list {
+  outline: 1px solid rgba(0,0,0,0.06);
+}
+
+@media (max-width: 890px)  {
+    .demo-calls {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+     .react-tel-input .flag-dropdown .country-list,
+  .react-tel-input .flag-dropdown.open .country-list {
+    left: 0 !important;
+    top: calc(100% + 8px) !important;
+    margin-left: 0 !important;
+  }
+}
+
