@@ -36,7 +36,7 @@ const Demo = () => {
                             <img src={tara} alt="Tara Demo" />
                             <p>Tara</p>
                             <button className="type_button" onClick={() => openModal("tara")}>
-                                Try the live web demo{" "}
+                                Open In Browser{" "}
                                 <span className="arrow">
                                     <img src={arrow} alt="" />
                                 </span>
@@ -46,7 +46,7 @@ const Demo = () => {
                             <img src={jude} alt="Alex Demo" />
                             <p>Jude</p>
                             <button className="type_button" onClick={() => openModal("jude")}>
-                                Try the live web demo{" "}
+                               Open In Browser{" "}
                                 <span className="arrow">
                                     <img src={arrow} alt="" />
                                 </span>

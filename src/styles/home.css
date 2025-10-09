@@ -77,7 +77,7 @@ body {
     font-weight: 500;
 } */
 .white_bg_button {
-    margin-top: 40px;
+    /* margin-top: 40px; */
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -88,14 +88,14 @@ body {
     padding: 15px 30px;
     color: var(--primary-color);
     cursor: pointer;
-    border-radius: 38px;
+    border-radius: 45px;
     background-color: #fff;
-    border: 2px solid var(--primary-color);
+    border: 1px solid var(--primary-color);
 
 }
 
 .white_bg_button:hover {
-    box-shadow: 10px 4px 12px var(--primary-color);
+    box-shadow: 10px 4px 12px #fff;
     transition: 0.5s box-shadow;
 }
 
@@ -420,7 +420,7 @@ h2 {
 }
 
 .type_button {
-    margin-top: 25px;
+    /* margin-top: 25px; */
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -440,7 +440,9 @@ h2 {
     box-shadow: 10px 4px 12px #07C0EA;
     transition: 0.5s box-shadow;
 }
-
+#cal_home_btn, #cons_home_btn {
+    margin-top: 40px;
+}
 .type_button span.arrow img {
     width: 18px;
     background-color: white;

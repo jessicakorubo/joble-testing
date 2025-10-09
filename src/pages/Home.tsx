@@ -113,7 +113,7 @@ const Home = () => {
                     <img src={arrow} alt="" />
                   </span>
                 </button>
-                <button className="white_bg_button" id="">
+                <button className="white_bg_button" id="cal_home_btn">
                   Run the cost calculator{" "}
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                     <g clip-path="url(#clip0_2669_197)">
@@ -337,7 +337,7 @@ const Home = () => {
               <p>Connect your calendar and CRM in 2 clicks</p>
             </div>
           </div>
-          <button className="type_button">
+          <button className="type_button" id="cons_home_btn">
             Book a 20 mins consult{" "}
             <span className="arrow">
               <img src={arrow} alt="" />
@@ -381,7 +381,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <button className="type_button">
+          <button className="type_button" id="cal_home_btn">
             <span>
               <img src={group} alt="" />
             </span>{" "}
@@ -680,7 +680,7 @@ const Home = () => {
             <div className="curve-text">
             <h1>Ready to stop losing revenue to missed calls and no-shows?</h1>
             <div className="buttons">
-              <button className="type_button" id="white_button">
+              <button className="white_bg_button" id="cons_home_btn">
                 {" "}
                 Book a 20 mins consult
               </button>

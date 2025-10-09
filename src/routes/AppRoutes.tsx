@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from '../pages/Home';
 import Pricing from '../pages/Pricing';
 import Demo from '../pages/Demo';
+import PreCall from '../pages/PreCall';
+import Services from '../pages/Services';
 
 const AppRoutes = () => {
   return (
@@ -14,6 +16,8 @@ const AppRoutes = () => {
                 {/* <Route path='/use-cases' element={<UseCases/>}/>
                 <Route path='/resources' element={<Resources/>}/> */}
                 <Route path='/live-demo' element={<Demo/>}/> 
+                <Route path='/precall' element={<PreCall/>}/>
+                <Route path='/services' element={<Services/>}/>
             </Routes>
         </BrowserRouter>
     </div>
