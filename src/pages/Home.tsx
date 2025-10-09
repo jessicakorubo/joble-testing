@@ -113,7 +113,7 @@ const Home = () => {
                     <img src={arrow} alt="" />
                   </span>
                 </button>
-                <button className="white_bg_button" id="cal_home_btn">
+                <button className="white_bg_button">
                   Run the cost calculator{" "}
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                     <g clip-path="url(#clip0_2669_197)">
@@ -565,7 +565,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="gain-button">
-                <button className="type_button">
+                <button className="type_button" id='cal_home_btn'>
                   <span></span> See your use case
                   <span className="arrow">
                     <img src={arrow} alt="" />
@@ -680,7 +680,7 @@ const Home = () => {
             <div className="curve-text">
             <h1>Ready to stop losing revenue to missed calls and no-shows?</h1>
             <div className="buttons">
-              <button className="white_bg_button" id="cons_home_btn">
+              <button className="white_bg_button">
                 {" "}
                 Book a 20 mins consult
               </button>

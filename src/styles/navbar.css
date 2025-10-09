@@ -3,7 +3,7 @@
 .navbar-container {
     background-color: #002D56;
     color: white;
-    /* position: fixed; */
+    position: fixed;
     top: 0;
     z-index: 1000;
     left: 0;

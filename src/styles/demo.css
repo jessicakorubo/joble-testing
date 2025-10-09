@@ -43,6 +43,7 @@
 .modal_overlay {
     padding: 30px;
     position: absolute;
+    z-index: inherit;
     top: 70%;
     left: 50%;
     background-color: #fff;

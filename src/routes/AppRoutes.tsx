@@ -5,6 +5,7 @@ import Pricing from '../pages/Pricing';
 import Demo from '../pages/Demo';
 import PreCall from '../pages/PreCall';
 import Services from '../pages/Services';
+import Calculator from '../pages/Calculator';
 
 const AppRoutes = () => {
   return (
@@ -18,6 +19,7 @@ const AppRoutes = () => {
                 <Route path='/live-demo' element={<Demo/>}/> 
                 <Route path='/precall' element={<PreCall/>}/>
                 <Route path='/services' element={<Services/>}/>
+                <Route path='/calculator' element={<Calculator/>}/>
             </Routes>
         </BrowserRouter>
     </div>
