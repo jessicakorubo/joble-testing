@@ -9,12 +9,12 @@ const app = express();
 const port = process.env.PORT || 8080;
 const host = "0.0.0.0"; // 👈 CRITICAL for AWS App Runner
 
-// Serve the built files
-app.use(express.static(path.join(__dirname, "dist")));
+// Serve static files from the root or public folder
+app.use(express.static(path.join(__dirname, "public"))); // optional if you have public assets
 
-// Handle client-side routes
+// Handle all routes by sending root index.html
 app.get(/.*/, (req, res) => {
-  res.sendFile(path.join(__dirname, "dist", "index.html"));
+  res.sendFile(path.join(__dirname, "index.html")); // <-- point to root
 });
 
 app.listen(port, host, () => {
