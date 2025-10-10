@@ -64,92 +64,95 @@ const Industries = () => {
                     </section>
                     {/* HEXAGONAL SECTION */}
                     <section className="modules-section">
+                        <h1>What's inside Joble Workspace-OS</h1>
                         <p className="modules-subtitle">
                             Replace your entire tool stack with one integrated platform
                         </p>
 
-                        <div className="modules-grid">
-                            {/* top-left */}
-                            <div className="module-card card-1">
-                                <div className="module-icon-wrap">
-                                    <img src={iconChat} alt="JobChat" />
+                        <div className="module-container">
+                            <div className="module-circle">
+                                <div className="center-circle">
+                                    <div className="center-inner">
+                                        <p className="center-text">
+                                            Take one module or the full suite — price caps at <strong>€10 per user</strong>
+                                        </p>
+                                        <button className="center-button">Start a free trial →</button>
+                                    </div>
                                 </div>
-                                <h3 className="module-title">JobChat</h3>
-                                <p className="module-replaces">Replaces Slack / Teams</p>
-                                <p className="module-desc">
-                                    Real-time chat, threads, emoji, file-share — all searchable by AI
-                                </p>
+                            </div>
+                            <div className="grid-container">
+                                <div className="modules-grid">
+                                    {/* top-left */}
+                                    <div className="module-card card-1">
+                                        <div className="module-icon-wrap">
+                                            <img src={iconChat} alt="JobChat" />
+                                        </div>
+                                        <h3 className="module-title">JobChat</h3>
+                                        <p className="module-replaces">Replaces Slack / Teams</p>
+                                        <p className="module-desc">
+                                            Real-time chat, threads, emoji, file-share — all searchable by AI
+                                        </p>
+                                    </div>
+                                    {/* top-right */}
+                                    <div className="module-card card-2">
+                                        <div className="module-icon-wrap">
+                                            <img src={iconMeet} alt="JobMeet" />
+                                        </div>
+                                        <h3 className="module-title">JobMeet</h3>
+                                        <p className="module-replaces">Replaces Zoom / Meet</p>
+                                        <p className="module-desc">
+                                            HD video & voice, auto-transcripts, Skill-Based invites that cut meeting time 30%
+                                        </p>
+                                    </div>
+                                    {/* middle-left */}
+                                    <div className="module-card card-3">
+                                        <div className="module-icon-wrap">
+                                            <img src={iconTasks} alt="JobTasks" />
+                                        </div>
+                                        <h3 className="module-title">JobTasks + Calendar</h3>
+                                        <p className="module-replaces">Replaces Trello / Asana / Calendly</p>
+                                        <p className="module-desc">
+                                            Kanban, Gantt, auto-schedule, follow-ups auto-generated from any chat or call
+                                        </p>
+                                    </div>
+                                    {/* center circle */}
+                                    {/* middle-right */}
+                                    <div className="module-card card-4">
+                                        <div className="module-icon-wrap">
+                                            <img src={iconFiles} alt="JobFiles" />
+                                        </div>
+                                        <h3 className="module-title">JobFiles</h3>
+                                        <p className="module-replaces">Replaces Dropbox / OneDrive</p>
+                                        <p className="module-desc">
+                                            Unlimited file storage on EU servers or your own box — instant previews, versioning
+                                        </p>
+                                    </div>
+                                    {/* bottom-left */}
+                                    <div className="module-card card-5">
+                                        <div className="module-icon-wrap">
+                                            <img src={iconAI} alt="Knowledge AI" />
+                                        </div>
+                                        <h3 className="module-title">Knowledge AI</h3>
+                                        <p className="module-replaces">Replaces Costly Copilot add-ons</p>
+                                        <p className="module-desc">
+                                            One-click answers that pull from chats, files and calls — pay only per query
+                                        </p>
+                                    </div>
+                                    {/* bottom-right */}
+                                    <div className="module-card card-6">
+                                        <div className="module-icon-wrap">
+                                            <img src={call} alt="Voice AI" />
+                                        </div>
+                                        <h3 className="module-title">Voice-AI Receptionist</h3>
+                                        <p className="module-replaces">Replaces Human front desk</p>
+                                        <p className="module-desc">
+                                            Answers in 47 languages, books into Joble or OpenTable — €0.25/min + €0.50 per booking
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
 
-                            {/* top-right */}
-                            <div className="module-card card-2">
-                                <div className="module-icon-wrap">
-                                    <img src={iconMeet} alt="JobMeet" />
-                                </div>
-                                <h3 className="module-title">JobMeet</h3>
-                                <p className="module-replaces">Replaces Zoom / Meet</p>
-                                <p className="module-desc">
-                                    HD video & voice, auto-transcripts, Skill-Based invites that cut meeting time 30%
-                                </p>
-                            </div>
 
-                            {/* middle-left */}
-                            <div className="module-card card-3">
-                                <div className="module-icon-wrap">
-                                    <img src={iconTasks} alt="JobTasks" />
-                                </div>
-                                <h3 className="module-title">JobTasks + Calendar</h3>
-                                <p className="module-replaces">Replaces Trello / Asana / Calendly</p>
-                                <p className="module-desc">
-                                    Kanban, Gantt, auto-schedule, follow-ups auto-generated from any chat or call
-                                </p>
-                            </div>
-
-                            {/* center circle */}
-                            <div className="center-circle">
-                                <div className="center-inner">
-                                    <p className="center-text">
-                                        Take one module or the full suite — price caps at <strong>€10 per user</strong>
-                                    </p>
-                                    <button className="center-button">Start a free trial →</button>
-                                </div>
-                            </div>
-
-                            {/* middle-right */}
-                            <div className="module-card card-4">
-                                <div className="module-icon-wrap">
-                                    <img src={iconFiles} alt="JobFiles" />
-                                </div>
-                                <h3 className="module-title">JobFiles</h3>
-                                <p className="module-replaces">Replaces Dropbox / OneDrive</p>
-                                <p className="module-desc">
-                                    Unlimited file storage on EU servers or your own box — instant previews, versioning
-                                </p>
-                            </div>
-
-                            {/* bottom-left */}
-                            <div className="module-card card-5">
-                                <div className="module-icon-wrap">
-                                    <img src={iconAI} alt="Knowledge AI" />
-                                </div>
-                                <h3 className="module-title">Knowledge AI</h3>
-                                <p className="module-replaces">Replaces Costly Copilot add-ons</p>
-                                <p className="module-desc">
-                                    One-click answers that pull from chats, files and calls — pay only per query
-                                </p>
-                            </div>
-
-                            {/* bottom-right */}
-                            <div className="module-card card-6">
-                                <div className="module-icon-wrap">
-                                    <img src={call} alt="Voice AI" />
-                                </div>
-                                <h3 className="module-title">Voice-AI Receptionist</h3>
-                                <p className="module-replaces">Replaces Human front desk</p>
-                                <p className="module-desc">
-                                    Answers in 47 languages, books into Joble or OpenTable — €0.25/min + €0.50 per booking
-                                </p>
-                            </div>
                         </div>
                     </section>
                 </div>
