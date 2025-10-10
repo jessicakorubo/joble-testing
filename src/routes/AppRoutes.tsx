@@ -6,6 +6,7 @@ import Demo from '../pages/Demo';
 import PreCall from '../pages/PreCall';
 import Services from '../pages/Services';
 import Calculator from '../pages/Calculator';
+import Industries from '../pages/Industries';
 
 const AppRoutes = () => {
   return (
@@ -14,6 +15,7 @@ const AppRoutes = () => {
             <Routes>
                 <Route path='/' element={<Home/>}/>
                 <Route path='/pricing' element={<Pricing/>}/>
+                <Route path='/industries' element={<Industries/>}/>
                 {/* <Route path='/use-cases' element={<UseCases/>}/>
                 <Route path='/resources' element={<Resources/>}/> */}
                 <Route path='/live-demo' element={<Demo/>}/> 

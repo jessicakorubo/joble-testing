@@ -46,7 +46,7 @@ const Demo = () => {
                             <img src={jude} alt="Alex Demo" />
                             <p>Jude</p>
                             <button className="type_button" onClick={() => openModal("jude")}>
-                               Open In Browser{" "}
+                                Open In Browser{" "}
                                 <span className="arrow">
                                     <img src={arrow} alt="" />
                                 </span>
@@ -74,13 +74,11 @@ const Demo = () => {
 
                 </div>
                 <div className="curve">
-                    <ResponsiveSVG>
-                        <h1>Want a more personalized experience?</h1>
-                        <p>Never miss a call. Book more meetings. Cut no shows.</p>
-                        <button className="type_button" id='white_button'>
-                            Start now for free
-                        </button>
-                    </ResponsiveSVG>
+                    <ResponsiveSVG
+                        title="Want a more personalized experience?"
+                        paragraph="Never miss a call. Book more meetings. Cut no-shows."
+                        link="sales@joble.app"
+                    />
                     {isModalOpen && selectedPerson && (
                         <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
                             <DemoModal selectedPerson={selectedPerson}

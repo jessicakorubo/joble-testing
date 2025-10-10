@@ -1,0 +1,465 @@
+:root {
+  --accent-blue: #07c0ea;
+  --text-dark: #1a1a1a;
+  --text-muted: #9c9c9c;
+  --card-bg: #fff;
+}
+
+.pricing_page {
+    margin-top: 200px;
+}
+.hero-para {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.pricing-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 72px 6%;
+  background: var(--bg);
+  flex-wrap: wrap;
+}
+
+/* LEFT column (cards + buttons) */
+.pricing-left{
+  flex: 1 1 520px; /* grows, shrinks, base width */
+  min-width: 320px;
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* GRID: two columns on desktop, one on mobile */
+.pricing-cards{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: stretch; /* make cards equal height if needed */
+}
+
+/* Card style */
+.pricing-card{
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(6, 24, 36, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pricing-card h4{
+  margin: 0;
+  font-size: 14px;
+  color: #111;
+  font-weight: 600;
+}
+
+.pricing-card .price{
+  margin: 6px 0 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--accent-dark);
+}
+
+.pricing-card .price .sub{
+  font-size: 13px;
+  font-weight: 500;
+  color: #666;
+  margin-left: 6px;
+}
+
+.pricing-card small{
+  color: #666;
+  font-size: 13px;
+}
+
+/* Buttons under the cards */
+.pricing-buttons{
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+  align-items: center;
+  /* align left on wide screens, centered on mobile by media query */
+  justify-content: flex-start;
+}
+
+.btn{
+  border: none;
+  border-radius: 28px;
+  padding: 12px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+/* Primary solid button */
+.btn.primary{
+  background: linear-gradient(90deg, var(--accent), var(--accent-dark));
+  color: white;
+  box-shadow: 0 6px 18px rgba(7,192,234,0.18);
+}
+
+.btn.primary:hover{ transform: translateY(-2px); }
+
+/* Outline button */
+.btn.outline{
+  background: transparent;
+  color: var(--accent);
+  border: 2px solid rgba(7,192,234,0.18);
+}
+.btn.outline:hover{ background: rgba(7,192,234,0.06); }
+
+/* RIGHT column: image */
+.pricing-right{
+  flex: 1 1 420px;
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing-right img{
+  width: 100%;
+  max-width: 540px;
+  border-radius: 10px;
+  box-shadow: 0 30px 60px rgba(3, 15, 30, 0.12);
+}
+/* === What's Included Section === */
+.includes {
+  margin-top: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.includes h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #111827;
+}
+
+/* Feature grid layout */
+.includes .grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  max-width: 860px;
+}
+
+/* Each feature card */
+.includes .feature-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 9999px; /* fully rounded pill shape */
+  padding: 0.9rem 1.2rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.includes .feature-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  transform: translateY(-2px);
+}
+
+.includes .feature-card svg {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.includes .feature-card span {
+  font-size: 0.95rem;
+  color: #1f2937;
+  text-align: left;
+}
+
+/* GDPR full-width card */
+.includes .feature-card.full {
+  grid-column: span 2;
+  justify-content: center
+}
+.addons-section {
+  background: var(--bg-light);
+  padding: 80px 6%;
+  display: flex;
+  justify-content: center;
+}
+
+.addons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+/* LEFT SIDE: IMAGE */
+.addons-left {
+  flex: 1 1 420px;
+  display: flex;
+  justify-content: center;
+}
+
+.addons-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* RIGHT SIDE: TEXT */
+.addons-right {
+  flex: 1 1 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.addons-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+.addons-subtitle {
+  color: var(--text-light);
+  font-size: 15px;
+  font-style: italic;
+  margin-top: -8px;
+}
+
+.addons-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.addon-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 14px 18px;
+  box-shadow: 0 4px 14px rgba(6, 24, 36, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.addon-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(6, 24, 36, 0.1);
+}
+
+.addon-icon {
+  font-size: 20px;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+.addon-icon
+{
+    background-color: #FAFAFA;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.addon-item p {
+  font-size: 15px;
+  color: var(--text-dark);
+  line-height: 1.4;
+  margin: 0;
+}
+.roi-section {
+  display: flex;
+  justify-content: center;
+  padding: 60px 6%;
+  background: #f8fcff;
+}
+
+.roi-card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  position: relative;
+  overflow: hidden;
+  max-width: 800px;
+  width: 100%;
+}
+
+.roi-content {
+  padding: 50px 60px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+
+.roi-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-top: 0;
+  color: var(--text-dark);
+  text-align: left !important;
+  margin-bottom: 6px;
+}
+
+.roi-subtitle {
+  font-family: 'TT Hoves Pro', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.roi-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.roi-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  color: var(--text-dark);
+}
+.roi-list li span {
+    font-family: 'TT Hoves Pro', sans-serif;
+    font-weight: 900;;
+}
+.roi-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.roi-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--accent-blue);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.roi-button:hover {
+  background: #05aed5;
+}
+
+.arrow {
+  font-size: 18px;
+  line-height: 0;
+}
+
+.roi-curve {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .roi-content {
+    padding: 40px 24px;
+  }
+
+  .roi-title {
+    font-size: 26px;
+  }
+}
+/* Responsive */
+@media (max-width: 900px) {
+  .addons-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .addons-list {
+    align-items: center;
+  }
+
+  .addon-item {
+    max-width: 420px;
+    text-align: left;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .includes .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .includes .feature-card.full {
+    grid-column: span 1;
+  }
+}
+
+
+/* Responsive behaviour */
+@media (max-width: 960px){
+  .pricing-section{
+    padding: 48px 5%;
+  }
+  .pricing-right img{ max-width: 420px; }
+}
+
+@media (max-width: 720px){
+  .pricing-section{
+    flex-direction: column;
+    padding: 32px 5%;
+  }
+
+  /* stack image below the cards on mobile */
+  .pricing-right{
+    order: 2;
+    margin-top: 28px;
+  }
+
+  .pricing-left{
+    order: 1;
+    width: 100%;
+    align-items: center;
+  }
+
+  /* single column cards on mobile */
+  .pricing-cards{
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .pricing-buttons{
+    justify-content: center;
+    width: 100%;
+  }
+
+  .pricing-card{
+    width: 100%;
+  }
+}

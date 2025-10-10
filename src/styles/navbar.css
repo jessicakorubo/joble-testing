@@ -19,7 +19,7 @@
     margin-right: 100px;
     align-items: center;
     gap: 40px;
-    padding: 10px 20px;
+    padding: 10px 15px;
 }
 
 .top-nav-items {
@@ -43,11 +43,10 @@
 .search {
     display: flex;
     align-items: center;
-    width: 350px;
+    width: 300px;
     gap: 10px;
     background: rgba(7, 192, 234, 0.3);
     /* 0.3 = 30% opacity */
-    border: 1px solid white;
     padding: 5px 10px;
     border-radius: 25px;
 }

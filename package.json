@@ -11,6 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "lucide-react": "^0.545.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-phone-input-2": "^2.15.1",
@@ -33,11 +34,3 @@
     "vite": "^7.1.7"
   }
 }
-
-
-
-
-
-
-
-

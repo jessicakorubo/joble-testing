@@ -8,7 +8,7 @@ body {
     align-items: center;
     /* Adjust height considering navbar height */
     box-sizing: border-box;
-    margin-top: 100px;
+    margin-top: 150px;
     /* Space for fixed navbar */
 }
 
@@ -92,7 +92,7 @@ body {
 }
 
 .white_bg_button:hover {
-    box-shadow: 10px 4px 12px #fff;
+    box-shadow: 10px 4px 12px var(--primary-color);
     transition: 0.5s box-shadow;
 }
 

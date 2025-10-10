@@ -206,25 +206,11 @@ const Calculator: React.FC = () => {
                             </div>
                         </div>
                     </div>
-                    <ResponsiveSVG>
-                        <div className="curve-text">
-                            <h1>Ready to stop losing revenue to missed calls and no shows?</h1>
-                            <div className="buttons">
-                                <button className="white_bg_button">
-                                    {" "}
-                                    Book a 20 mins consult
-                                </button>
-                                <button className="type_button" id="transparent_btn">
-                                    {" "}
-                                    Try the live web demo
-                                </button>
-                            </div>
-                            <p>
-                                Prefer email?{" "}
-                                <a href="mailto:sales@joble.app">sales@joble.app</a>
-                            </p>
-                        </div>
-                    </ResponsiveSVG>
+                     <ResponsiveSVG
+                        title="Ready to stop losing revenue to missed calls and no shows?"
+                        paragraph=""
+                        link="sales@joble.app"
+                    />
                 </div>
             </MainLayout>
         </div>

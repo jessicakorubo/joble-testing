@@ -676,29 +676,12 @@ const Home = () => {
           ))}
         </div>
         <div className="curve">
-          <ResponsiveSVG className="resp-svg">
-            <div className="curve-text">
-            <h1>Ready to stop losing revenue to missed calls and no-shows?</h1>
-            <div className="buttons">
-              <button className="white_bg_button">
-                {" "}
-                Book a 20 mins consult
-              </button>
-              <button className="type_button" id="transparent_btn">
-                {" "}
-                Try the live web demo
-              </button>
-            </div>
-            <div className="email">
-              <p>
-                Prefer email?{" "}
-                <a href="mailto:sales@joble.app">sales@joble.app</a>
-              </p>
-            </div>
-          </div>
-          </ResponsiveSVG>
+          <ResponsiveSVG
+            title="Ready to stop losing revenue to missed calls and no-shows?"
+            paragraph=""
+            link="sales@joble.app"
+          />
 
-          
         </div>
       </MainLayout>
     </div>
