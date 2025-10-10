@@ -9,12 +9,13 @@ build:
       - echo "📦 Installing dependencies..."
       - npm install --include=dev
       - echo "🏗️ Building app..."
-      - npm run build --verbose
+      - set -e
+      - npm run build --verbose || (echo "❌ Build failed! Directory structure:" && ls -la && echo "node_modules contents:" && ls -la node_modules | head -n 20 && exit 1)
       - echo "📁 Checking dist folder contents..."
       - ls -la dist || (echo "❌ dist folder not found!" && exit 1)
 
 run:
-  # --single ensures React Router always returns index.html for any route
+  # The --single flag ensures React Router always returns index.html
   command: npx serve -s dist --single -l 8080
   network:
     port: 8080
