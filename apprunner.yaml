@@ -9,6 +9,7 @@ build:
       - npm run build --verbose || (echo "Build failed. Printing logs..." && ls -la && cat /var/log/* || true)
 
 run:
-  command: npx serve -s dist -l 8080
+  # The --single flag tells serve to always return index.html for unknown routes (important for React Router)
+  command: npx serve -s dist --single -l 8080
   network:
     port: 8080
