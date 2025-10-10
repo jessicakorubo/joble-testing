@@ -1,0 +1,56 @@
+name: Deploy to EKS 
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Authenticate with Docker Hub
+        run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Build and Push Docker Image
+        run: |
+          IMAGE_TAG="joblenew-staging-v${{ github.run_id }}"
+          docker build -t zarttechjobpro/jobpro:$IMAGE_TAG .
+          docker tag zarttechjobpro/jobpro:$IMAGE_TAG zarttechjobpro/jobpro:joblenew-staging-v${{ github.run_id }}
+          docker push zarttechjobpro/jobpro:joblenew-staging-v${{ github.run_id }}
+
+      - name: Remove Unused Docker Images
+        run: docker system prune -f
+
+      - name: Set Git Config
+        run: |
+          git config --global user.email "dozie@zarttech.com"
+          git config --global user.name "DozieMartins"
+
+      - name: Clone Repository
+        run: |
+          git clone https://${{ secrets.USERNAME }}:${{ secrets.TOKEN }}@github.com/Zarttech-main/provisioning.git
+
+      - name: Update Kubernetes YAML
+        run: |
+          cd provisioning
+
+          # Safely replace the full image line
+          sed -i "s|image: .*|image: zarttechjobpro/jobpro:joblenew-staging-v${{ github.run_id }}|g" projects/AWS/joblenew-staging/deployment.yaml
+
+          echo "Updated deployment file:"
+          cat projects/AWS/joblenew-staging/deployment.yaml
+
+          git add projects/AWS/joblenew-staging/deployment.yaml
+
+          # Only commit and push if there are actual changes
+          if git diff --cached --quiet; then
+            echo "No changes to commit. Skipping push."
+          else
+            git commit -m "updated deployment prod"
+            git push
+          fi
