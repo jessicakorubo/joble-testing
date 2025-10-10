@@ -4,12 +4,17 @@ runtime: nodejs22
 build:
   commands:
     build:
+      - echo "🧹 Cleaning old dist folder..."
+      - rm -rf dist || true
+      - echo "📦 Installing dependencies..."
       - npm install --include=dev
-      # Try building, print more logs if it fails
-      - npm run build --verbose || (echo "Build failed. Printing logs..." && ls -la && cat /var/log/* || true)
+      - echo "🏗️ Building app..."
+      - npm run build --verbose
+      - echo "📁 Checking dist folder contents..."
+      - ls -la dist || (echo "❌ dist folder not found!" && exit 1)
 
 run:
-  # The --single flag tells serve to always return index.html for unknown routes (important for React Router)
+  # --single ensures React Router always returns index.html for any route
   command: npx serve -s dist --single -l 8080
   network:
     port: 8080
