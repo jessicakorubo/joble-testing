@@ -4,18 +4,14 @@ runtime: nodejs22
 build:
   commands:
     build:
-      - echo "🧹 Cleaning old dist folder..."
-      - rm -rf dist || true
-      - echo "📦 Installing dependencies..."
-      - npm install --include=dev
-      - echo "🏗️ Building app..."
-      - set -e
-      - npm run build --verbose || (echo "❌ Build failed! Directory structure:" && ls -la && echo "node_modules contents:" && ls -la node_modules | head -n 20 && exit 1)
-      - echo "📁 Checking dist folder contents..."
-      - ls -la dist || (echo "❌ dist folder not found!" && exit 1)
+      - echo "🟢 Installing dependencies..."
+      - npm ci || npm install --include=dev
+      - echo "🟢 Building Vite app..."
+      - npm run build --verbose
+      - echo "🟢 Build completed. Listing dist contents:"
+      - ls -la dist || echo "❌ dist folder not found!"
 
 run:
-  # The --single flag ensures React Router always returns index.html
   command: npx serve -s dist --single -l 8080
   network:
     port: 8080
