@@ -28,8 +28,8 @@ jobs:
 
       - name: Set Git Config
         run: |
-          git config --global user.email "dozie@zarttech.com"
-          git config --global user.name "DozieMartins"
+          git config --global user.email "chidozie@zarttech.com"
+          git config --global user.name "dozzman-z"
 
       - name: Clone Repository
         run: |
