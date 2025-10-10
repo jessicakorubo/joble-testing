@@ -7,16 +7,17 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 const port = process.env.PORT || 8080;
-const host = "0.0.0.0"; // 👈 CRITICAL for AWS App Runner
+const host = "0.0.0.0"; // Required for App Runner
 
-// Serve static files from the root or public folder
-app.use(express.static(path.join(__dirname, "public"))); // optional if you have public assets
+// Serve the dist folder
+app.use(express.static(path.join(__dirname, "dist")));
 
-// Handle all routes by sending root index.html
+// Handle client-side routing
 app.get(/.*/, (req, res) => {
-  res.sendFile(path.join(__dirname, "index.html")); // <-- point to root
+  res.sendFile(path.join(__dirname, "dist", "index.html"));
 });
 
 app.listen(port, host, () => {
   console.log(`✅ Server is running on http://${host}:${port}`);
 });
+
