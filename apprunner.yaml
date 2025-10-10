@@ -19,3 +19,22 @@ run:
   command: npx serve -s dist --single -l 8080
   network:
     port: 8080
+
+
+
+
+# version: 1.0
+# runtime: nodejs22
+
+# build:
+#   commands:
+#     build:
+#       - npm install --include=dev
+#       # Try building, print more logs if it fails
+#       - npm run build --verbose || (echo "Build failed. Printing logs..." && ls -la && cat /var/log/* || true)
+
+# run:
+#   # The --single flag tells serve to always return index.html for unknown routes (important for React Router)
+#   command: npx serve -s dist --single -l 8080
+#   network:
+#     port: 8080
