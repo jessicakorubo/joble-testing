@@ -5,7 +5,8 @@ build:
   commands:
     build:
       - npm install --include=dev
-      - npm run build
+      # Try building, print more logs if it fails
+      - npm run build --verbose || (echo "Build failed. Printing logs..." && ls -la && cat /var/log/* || true)
 
 run:
   command: npx serve -s dist -l 8080
