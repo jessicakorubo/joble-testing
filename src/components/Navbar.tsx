@@ -19,7 +19,7 @@ const Navbar = () => {
           <a href="">Support</a>
           <a href="">Join</a>
           <a href="">Host</a>
-          <a href="">Sign in</a>
+          <a href="https://app.joble.app/auth/get-started">Sign in</a>
         </div>
         <div className="hamburger">
           <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
