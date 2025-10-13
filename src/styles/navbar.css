@@ -67,15 +67,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
 .navbar {
     z-index: 1000;
     /* ensures it stays above other content */
@@ -89,12 +80,80 @@
     font-family: Arial, sans-serif;
 }
 
-.navItems ul {
+.navItems .main-menu {
     list-style: none;
     display: flex;
     gap: 50px;
     margin: 0;
     padding: 0;
+}
+.navItems ul li.dropdown {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 120%;
+  padding: 20px;
+  left: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 0.75rem 0;
+  min-width: 180px;
+  z-index: 100;
+}
+.dropdown-menu h5 {
+    color: rgb(24, 17, 161);
+    font-size: 16px;
+}
+.dropdown-menu ul {
+  background: #F9FAFB;
+  width: 60%;
+  display: flex;
+  padding: 0;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.dropdown-menu li {
+  display: block;
+  padding: 0;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #333;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.dropdown-menu li a:hover {
+  /* background: #f0f0f0; */
+}
+
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Optional: Add a small arrow indicator */
+.dropdown > a::after {
+  content: "";
+  margin-left: 6px;
+  margin-bottom: 2px;
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
 }
 
 .navItems ul li a {

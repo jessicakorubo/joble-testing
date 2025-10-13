@@ -579,18 +579,18 @@ const Home = () => {
         <div className="badge fair_badge">Simple & Fair</div>
         <h1>Pricing</h1>
         <div className="pricing">
-          <div className="pricing-card">
+          <div className="pricing-card-home">
             <img src={call} alt="" className="icon" />
             <h3>Usage</h3>
             <h3> €1.50/min (NL)</h3>
             <h3>€1.50/min (UK)</h3>
           </div>
-          <div className="pricing-card">
+          <div className="pricing-card-home">
             <img src={calendar2} alt="" className="icon" />
             <h3>Per booking added</h3>
             <h3>€0.50/meeting</h3>
           </div>
-          <div className="pricing-card">
+          <div className="pricing-card-home">
             <img src={platform} alt="" className="icon" />
             <h3 id="platform">Platform (optional)</h3>
             <h3>€10/user</h3>

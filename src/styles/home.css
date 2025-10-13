@@ -714,7 +714,7 @@ h2 {
     justify-content: center;
 }
 
-.pricing-card {
+.pricing-card-home {
     border-radius: 17.907px;
     width: 250px;
     min-height: fit-content;
@@ -724,7 +724,7 @@ h2 {
     box-shadow: -8.42px 9.68px 86.3px -11.29px rgba(0, 0, 0, 0.10);
 }
 
-.pricing-card .icon {
+.pricing-card-home .icon {
     background: #FAFAFA;
     padding: 15px;
     border-radius: 13.757px;
@@ -734,14 +734,14 @@ h2 {
     line-height: 5px;
 }
 
-.pricing-card h3 {
+.pricing-card-home h3 {
     font-size: 15px;
     font-weight: 900;
     font-style: normal;
     font-family: 'TT Hoves Pro Bold', sans-serif;
 }
 
-.pricing-card p {
+.pricing-card-home p {
     font-size: 14px !important;
 }
 

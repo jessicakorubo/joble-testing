@@ -76,10 +76,10 @@ const Industries = () => {
                             </div>
 
                             <div className="badges">
-                                <span className="badge pink">70% Lower cost vs. Big-Tech tools</span>
-                                <span className="badge blue">20min Setup time—scan QR, go live</span>
-                                <span className="badge yellow">GDPR & Schrems II proof by design</span>
-                                <span className="badge orange">€0.01 AI costs cents, not €30/seat</span>
+                                <span className="badge-sol pink">70% Lower cost vs. Big-Tech tools</span>
+                                <span className="badge-sol blue">20min Setup time—scan QR, go live</span>
+                                <span className="badge-sol yellow">GDPR & Schrems II proof by design</span>
+                                <span className="badge-sol orange">€0.01 AI costs cents, not €30/seat</span>
                             </div>
                         </div>
                     </section>

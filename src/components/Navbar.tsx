@@ -36,49 +36,58 @@ const Navbar = () => {
           <img className='joble_logo' src={logo} alt="joble logo" />
         </div>
         <div className='navItems'>
-          <ul>
-  <li>
-    <NavLink
-      to="/"
-      end
-      className={({ isActive }) => (isActive ? "active-link" : "")}
-    >
-      Products
-    </NavLink>
-  </li>
-  <li>
-    <NavLink
-      to="/use-cases"
-      className={({ isActive }) => (isActive ? "active-link" : "")}
-    >
-      Use Cases
-    </NavLink>
-  </li>
-  <li>
-    <NavLink
-      to="/pricing"
-      className={({ isActive }) => (isActive ? "active-link" : "")}
-    >
-      Pricing
-    </NavLink>
-  </li>
-  <li>
-    <NavLink
-      to="/resources"
-      className={({ isActive }) => (isActive ? "active-link" : "")}
-    >
-      Resources
-    </NavLink>
-  </li>
-  <li>
-    <NavLink
-      to="/live-demo"
-      className={({ isActive }) => (isActive ? "active-link" : "")}
-    >
-      Live Demo
-    </NavLink>
-  </li>
-</ul>
+          <ul className='main-menu'>
+            <li className='dropdown'>
+              <NavLink
+                to="/"
+                end
+                className={({ isActive }) => (isActive ? "active-link" : "")}
+              >
+                Products
+              </NavLink>
+              <div className="dropdown-menu">
+                {/* <h5>Products</h5> */}
+                <ul>
+                  <li><NavLink to="/services">Services</NavLink></li>
+                  <li><NavLink to="/solutions">Solutions</NavLink></li>
+                  <li><NavLink to="/industries">Industries</NavLink></li>
+                </ul>
+              </div>
+
+            </li>
+            <li>
+              <NavLink
+                to="/use-cases"
+                className={({ isActive }) => (isActive ? "active-link" : "")}
+              >
+                Use Cases
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/pricing"
+                className={({ isActive }) => (isActive ? "active-link" : "")}
+              >
+                Pricing
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/resources"
+                className={({ isActive }) => (isActive ? "active-link" : "")}
+              >
+                Resources
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/live-demo"
+                className={({ isActive }) => (isActive ? "active-link" : "")}
+              >
+                Live Demo
+              </NavLink>
+            </li>
+          </ul>
         </div>
         <div className='buttons'>
           <button className='sales'>Contact Sales</button>
