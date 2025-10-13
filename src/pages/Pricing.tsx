@@ -11,7 +11,7 @@ import crm from "../assets/crm.png";
 import curveBg from "../assets/landing_frame.png";
 import checkIcon from "../assets/checkIcon.png";
 import ResponsiveSVG from '../components/ResponsiveSVG';
-import group from "../assets/group.svg";
+import group from "../assets/grouping.svg";
 import arrow from "../assets/arrow-right.svg";
 
 

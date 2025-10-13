@@ -17,7 +17,7 @@ import iconCounter1 from "../assets/iconCounter1.png";
 import iconCounter2 from "../assets/iconCounter2.png";
 import iconCounter3 from "../assets/iconCounter3.png";
 import arrow from "../assets/arrow-right.svg";
-import group from "../assets/group.svg";
+import group from "../assets/grouping.svg";
 import shieldIcon from "../assets/shieldIcon.svg";
 import uploadIcon from "../assets/uploadIcon.svg";
 import userIcon from "../assets/userIcon.svg";
