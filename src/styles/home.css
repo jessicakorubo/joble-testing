@@ -8,7 +8,7 @@ body {
     align-items: center;
     /* Adjust height considering navbar height */
     box-sizing: border-box;
-    margin-top: 150px;
+    margin-top: 250px;
     /* Space for fixed navbar */
 }
 
@@ -21,9 +21,23 @@ body {
     font-family: 'TT Hoves Pro', sans-serif;
     font-size: 25px;
     margin-top: 20px;
-
 }
-
+.outbound-section {
+    display: flex;
+    border: 2px solid var(--primary-color);
+    width: fit-content;
+    padding: 5px 10px;
+    gap: 15px;
+    border-radius: 25px;
+}
+.outbound-design {
+    display: flex;
+    gap: 2.5px;
+}
+.outbound-design .bound-text {
+    color: var(--primary-color);
+    font-family: 'TT Hoves Pro', sans-serif;
+}
 .left-hero-section {
     flex: 1;
     padding: 20px;
