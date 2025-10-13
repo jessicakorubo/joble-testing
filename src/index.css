@@ -4,6 +4,7 @@
   box-sizing: border-box;
   max-width: 100%;
 }
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -18,49 +19,63 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 @font-face {
   font-family: 'TT Hoves Pro';
   src: url(./assets/fonts/tt_hoves_pro/TT\ Hoves\ Pro\ Trial\ Regular.ttf) format('truetype');
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'TT Hoves Pro Demi';
   src: url(./assets/fonts/tt_hoves_pro/TT\ Hoves\ Pro\ Trial\ DemiBold.ttf) format('truetype');
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'TT Hoves Pro Bold';
   src: url(./assets/fonts/tt_hoves_pro/TT\ Hoves\ Pro\ Trial\ Bold.ttf) format('truetype');
   font-weight: 700;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'TT Hoves Pro Small';
   src: url(./assets/fonts/tt_hoves_pro/TT\ Hoves\ Pro\ Trial\ Light.ttf) format('truetype');
   font-weight: 400;
   font-style: normal;
 }
+
 a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
 
 body {
   margin: 0;
+ 
+  /* fills the screen nicely */
+  background-position: top center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
   display: flex;
   place-items: center;
   /* min-width: 320px; */
   width: 100% !important;
   /* overflow-x: hidden; */
-  min-height: 100vh;
+  background-image: url('./assets/background-ellipse.png');
+ height: 100%;
 }
-html, body {
+
+html,
+body {
   margin: 0;
   padding: 0;
   /* overflow-x: hidden; */
@@ -97,9 +112,11 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
@@ -111,10 +128,16 @@ button:focus-visible {
 
 
 :root {
-    --primary-color: #1AC3E9;
-    /* Example primary color */
-    --hover-color: #0056b3;
-    /* Darker shade for hover effects */
-    --text-color: #07C0EA;
-    /* Text color */
+  --primary-color: #1AC3E9;
+  /* Example primary color */
+  --hover-color: #0056b3;
+  /* Darker shade for hover effects */
+  --text-color: #07C0EA;
+  /* Text color */
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    
+  }
 }

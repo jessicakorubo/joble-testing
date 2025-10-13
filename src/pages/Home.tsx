@@ -29,6 +29,8 @@ import demoVideo from "../assets/joble_video.mp4";
 import outbound2 from "../assets/outbound2.png";
 import joble_svg from "../assets/joble_svg.svg";
 import ResponsiveSVG from "../components/ResponsiveSVG";
+import { motion } from "framer-motion";
+import joble_gif from "../assets/joble-gif.gif";
 
 const Home = () => {
   const faqData = [
@@ -95,7 +97,17 @@ const Home = () => {
   return (
     <div>
       <MainLayout>
-        <div className="hero-section">
+        <motion.section
+          initial={{ opacity: 0, y: -100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 1,
+            type: "spring",
+            stiffness: 80,
+            damping: 18,
+          }}
+          viewport={{ once: false, amount: 0.2 }}
+          className="hero-section">
           <div className="left-hero-section">
             <div className="outbound-line">
               <div className="outbound-section">
@@ -210,7 +222,7 @@ const Home = () => {
             </div>
             <div className="hero-text">
               <h1>
-                The AI Phone Agent That <br />
+                The AI Phone Agent That{" "}
                 <span className="dynamic-tag">{words[currentWordIndex]}</span>
               </h1>
               <p>Never miss a call, Book more meetings. Cut no shows.</p>
@@ -240,7 +252,7 @@ const Home = () => {
           <div className="right-hero-section">
             <img src={heroImage2} alt="" />
           </div>
-        </div>
+        </motion.section>
         {/* Companies slider */}
         <div className="companies_slider">
           <p>
@@ -268,7 +280,7 @@ const Home = () => {
                 <path d="M1.79754 15.9551C2.72032 15.9551 3.46812 16.7029 3.46812 17.6257C3.46812 21.5075 4.97944 25.1565 7.72423 27.9013C10.469 30.6461 14.1187 32.1574 17.9999 32.1574C21.881 32.1574 25.5307 30.6461 28.2755 27.9013C31.0203 25.1565 32.5316 21.5068 32.5316 17.6257C32.5316 16.7029 33.2794 15.9551 34.2022 15.9551C35.125 15.9551 35.8728 16.7029 35.8728 17.6257C35.8728 22.4003 34.0136 26.8885 30.6375 30.2647C27.2613 33.6409 22.7731 35.5 17.9984 35.5C13.2238 35.5 8.73558 33.6409 5.35941 30.2647C1.9861 26.8885 0.126953 22.4003 0.126953 17.6264C0.126953 16.7036 0.874753 15.9558 1.79754 15.9558V15.9551Z" fill="#4A96FC" />
               </svg>
             </div>
-            <h3>Missed calls cause revenue?</h3>
+            <h3>Missed Calls Cost Revenue?</h3>
             <p>We Answer</p>
           </div>
           <div className="card">
@@ -306,7 +318,11 @@ const Home = () => {
             <p>Voice reaches everyone</p>
           </div>
         </div>
+        {/* <div className="background-ellipse">
+          <div className="eclipsed-bg"></div>
+        </div> */}
         <div className="joble">
+
           <h2>
             What <span className="joble-highlight">Joble</span> Does
           </h2>
@@ -318,7 +334,7 @@ const Home = () => {
           <div className="services">
             <div
               className="service"
-              onClick={() => handleImageChange(outbound2)}
+              onMouseEnter={() => handleImageChange(outbound2)}
             >
               <h3><b>Inbound AI Receptionist</b> </h3>
               <p>
@@ -335,7 +351,7 @@ const Home = () => {
             </div>
             <div
               className="service"
-              onClick={() => handleImageChange(outboundAI)}
+              onMouseEnter={() => handleImageChange(outboundAI)}
             >
               <h3> <b>Outbound AI Caller</b>  </h3>
               <p>
@@ -352,7 +368,7 @@ const Home = () => {
             </div>
             <div
               className="service"
-              onClick={() => handleImageChange(phone_statement)}
+              onMouseEnter={() => handleImageChange(phone_statement)}
             >
               <h3> <b>Phone Storefront</b> </h3>
               <p>
@@ -368,14 +384,20 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="service-pics">
-            <img
-              key={activeImage}
-              src={activeImage}
-              className="fade-image"
-              alt="Service Illustration"
-            />
+
+          <div className="service-gif">
+            <img src={joble_gif} className="joble-gif-top" alt="" />
+            <div className="service-pics">
+              <img
+                key={activeImage}
+                src={activeImage}
+                className="fade-image"
+                alt="Service Illustration"
+              />
+            </div>
+            <img src={joble_gif} className="joble-gif-bottom" alt="" />
           </div>
+
         </div>
         <div className="landing_section">
           <div className="landing">
@@ -491,7 +513,7 @@ const Home = () => {
           </div>
           <button className="type_button" id="cal_home_btn">
             <span>
-              <img src={group} alt="" />
+              <img className="imgGroup" src={group} alt="" />
             </span>{" "}
             Run the cost calculator{" "}
             <span className="arrow">

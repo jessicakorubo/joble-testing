@@ -166,9 +166,10 @@ body {
 }
 
 .card h3 {
-    font-family: 'tt Hoves Pro', sans-serif;
+    font-family: 'TT Hoves Pro', sans-serif;
     color: #002D56;
-    font-size: 20px;
+    text-transform: capitalize;
+    font-size: 18px;
     line-height: 120%;
     font-style: normal;
     font-weight: 500;
@@ -177,7 +178,7 @@ body {
 .card p {
     color: #002D56;
     text-align: center;
-    font-family: "TT Hoves Pro Bold", sans-serif;
+    font-family: "TT Hoves Pro Demi", sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 900;
@@ -186,16 +187,23 @@ body {
     line-height: 120%;
     text-transform: capitalize;
 }
-
+.background-ellipse {
+   position: relative;
+     overflow: visible;
+}
 .joble {
     text-align: center;
+    
     margin-top: 100px;
+  
 }
 
 .joble h2 {
     font-size: 50px;
 }
-
+.services {
+    width: 40%;
+}
 .service {
     background: #fff;
     border-radius: 12px;
@@ -222,14 +230,18 @@ body {
     margin: 50px 0;
     gap: 30px;
     padding: 30px 6rem;
+    padding-right: 0;
 }
 
 p.outcome {
     opacity: 0.7;
 }
-
+.service-gif {
+    width: 60%;
+    position: relative;
+}
 .service-pics {
-    width: max-content;
+    width: 100%;
     height: 100%;
     z-index: -1;
 }
@@ -240,6 +252,23 @@ p.outcome {
     font-family: 'TT Hoves Pro Bold', sans-serif;
 }
 
+.joble-gif-top {
+    position: absolute;
+    top:-5rem;
+    left: 20%;
+    width: fit-content;
+    z-index: -1;
+    height: fit-content;
+}
+ .joble-gif-bottom{
+    position: absolute;
+    bottom:-5rem;
+    left: 20%;
+    width: fit-content;
+    z-index: -1;
+    height: fit-content;
+}
+ 
 .service-pics img {
     width: 100%;
     height: 100%;
@@ -456,6 +485,49 @@ h2 {
 #cal_home_btn, #cons_home_btn {
     margin-top: 40px;
 }
+#cal_home_btn {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.6s ease; /* for width and subtle hover effects */
+  width: 280px; /* your default width */
+}
+
+#cal_home_btn .imgGroup {
+  transition: opacity 0.8s ease, transform 0.8s ease, filter 0.8s ease;
+}
+
+#cal_home_btn:hover {
+  width: 250px; /* slightly smaller */
+}
+
+#cal_home_btn:hover .imgGroup {
+  opacity: 0;
+  transform: scale(1.3);
+  filter: blur(3px);
+}
+
+#cal_home_btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(0, 102, 255, 0.25) 0%, transparent 70%);
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  z-index: 0;
+}
+
+#cal_home_btn:hover::after {
+  opacity: 1;
+  transform: scale(1.5);
+}
+
+#cal_home_btn span,
+#cal_home_btn img {
+  position: relative;
+  z-index: 1; /* ensures text and icons stay above ripple */
+}
+
 .type_button span.arrow img {
     width: 18px;
     background-color: white;
@@ -1216,4 +1288,18 @@ h2 {
     .curve-text .type_button{
         margin-top: 0;
     }
+}
+.eclipsed-bg {
+  position: absolute;
+  top: 0; /* just under navbar */
+  left: 0;
+  width: 100%;
+  height: 400px; /* adjust the height as needed */
+  background: radial-gradient(
+    ellipse 80% 60% at 50% 0%, /* width, height, position */
+    #E9FBFF 0%,                /* bright blue center */
+    #C4E9F8 30%,               /* soft transition */
+    #ffffff 70%                /* fade into white */
+  );
+  z-index: -1; /* ensure it sits behind content */
 }
