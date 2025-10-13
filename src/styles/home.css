@@ -772,7 +772,7 @@ h2 {
 
 .video-frame {
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
     border-radius: 20px;
     overflow: hidden;
     /* ensures video corners are rounded */

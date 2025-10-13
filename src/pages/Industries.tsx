@@ -1,16 +1,37 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import "../styles/industries.css";
 import MainLayout from '../layout/MainLayout';
 import arrow from "../assets/arrow-right.svg";
 import call from "../assets/call.svg";
 import iconChat from "../assets/icon-chat.png";
+import landing_frame from "../assets/landing_frame.png";
 import iconMeet from "../assets/icon-meet.png";
 import iconTasks from "../assets/icon-calendar.png";
 import iconFiles from "../assets/icon-files.png";
 import iconAI from "../assets/icon-ai.png";
+import shield from "../assets/shield.png";
+import network from "../assets/network.png";
+import hardware from "../assets/hardware.png";
+import demoVideo from "../assets/joble_video.mp4";
 // import iconVoice from "../assets/icon-voice.png";    
 
 const Industries = () => {
+
+    const videoRef = useRef<HTMLVideoElement | null>(null);
+    const [isPlaying, setIsPlaying] = useState(false);
+
+    const handleVideoClick = () => {
+        if (!videoRef.current) return; // ✅ safety check
+
+        if (videoRef.current.paused) {
+            videoRef.current.play();
+            setIsPlaying(true);
+        } else {
+            videoRef.current.pause();
+            setIsPlaying(false);
+        }
+    };
+
     return (
         <div>
             <MainLayout>
@@ -167,6 +188,140 @@ const Industries = () => {
 
                         </div>
                     </section>
+
+                    {/* TABLE */}
+                    <div className="comparison-container">
+                        <table className="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th className="features-header">Features</th>
+                                    <th>Joble Cloud</th>
+                                    <th>Joble Appliance</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Go-live speed:</td>
+                                    <td>2-minute signup</td>
+                                    <td>20-minute plug-and-play</td>
+                                </tr>
+                                <tr>
+                                    <td>Data Location:</td>
+                                    <td>EU &amp; Africa data-centres</td>
+                                    <td>100% on-site</td>
+                                </tr>
+                                <tr>
+                                    <td>Compliance Fit:</td>
+                                    <td>GDPR-first</td>
+                                    <td>GDPR + air-gap</td>
+                                </tr>
+                                <tr>
+                                    <td>Ideal For:</td>
+                                    <td>Remote teams, fast pilots</td>
+                                    <td>Regulated, cloud-wary orgs</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    <div className="landing_section">
+                        <div className="landing-sol">
+                            <h3>
+                                Built to Save you Time and Money
+                            </h3>
+                           
+                                <div className="landing-boxes">
+                                    <div className="landing-box">
+                                        <h4>70%</h4>
+                                        <p>Total cost reduction</p>
+                                        <p>(500-user 4-yr benchmark)</p>
+                                    </div>
+                                    <div className="landing-box">
+                                        <h4>70%</h4>
+                                        <p>Per employee per week reclaimed</p>
+                                        <p>(fewer logins & shorter meetings)</p>
+                                    </div>
+                                    <div className="landing-box">
+                                        <h4>70%</h4>
+                                        <p>Total cost reduction</p>
+                                        <p>Great for ESG targets and generator budgets</p>
+                                    </div>
+                                </div>
+                           
+
+                        </div>
+                        <div className="landing-frame">
+                            <img src={landing_frame} alt="" />
+                        </div>
+                    </div>
+
+                    <div className="compliance-sol">
+                        <h1>Security and Trust Built in</h1>
+                        <section className="features-section-sol">
+                            {/* Left column */}
+                            <div className="feature-card-flex">
+                                {/* <div className="upper-grid"> */}
+                                <div className="feature-grid-sol">
+                                    <div className="feature-icon">
+                                        <img src={shield} alt="GDPR icon" />
+                                    </div>
+                                    <h3>Security Certified</h3>
+                                    <div className="feature-items-sol">
+                                        <div>ISO 27001</div>
+                                        <div>SOC 2</div>
+                                        <div>PCI-DSS</div>
+                                    </div>
+                                </div>
+                                <div className="feature-grid-sol">
+                                    <div className="feature-icon">
+                                        <img src={hardware} alt="GDPR icon" />
+                                    </div>
+                                    <h3>Hardware Security</h3>
+                                    <div className="feature-items-sol">
+                                        <div>Hardware TPM 2.0</div>
+                                        <div>Full-disk encryption</div>
+                                        <div>Hourly snapshots</div>
+                                    </div>
+                                </div>
+
+
+                                <div className="feature-grid-sol">
+                                    <div className="feature-icon">
+                                        <img src={network} alt="Outbound controls" />
+                                    </div>
+                                    <h4>Network Security</h4>
+                                    <div>Zero-trust tunnel—no open firewall ports, ever</div>
+                                </div>
+
+                                {/* </div> */}
+                            </div>
+
+                        </section>
+                    </div>
+
+                    <div className="video-container">
+                        <div className="vid-text">
+                            <h2>See it in 2 minutes</h2>
+                            <h5>Watch a two-minute tour, then dial our live Voice-AI demo: +31 (0)85 064 9920.</h5>
+                            <p>Cloud trial → Free for 14 days, no credit card.</p>
+                            <p>Request a pilot appliance → We ship; you plug in. Keep it only if you love it. </p>
+                            <div className="vid-button">
+                                <button className="type_button">Try the live web demo</button>
+                            </div>
+                        </div>
+                        <div className="video-frame">
+                            <video
+                                ref={videoRef}
+                                onClick={handleVideoClick}
+                                controls
+                                className="video"
+                            >
+                                <source src={demoVideo} type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
                 </div>
 
             </MainLayout>
@@ -176,3 +331,4 @@ const Industries = () => {
 }
 
 export default Industries
+
