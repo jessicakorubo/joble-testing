@@ -224,9 +224,9 @@ const Pricing = () => {
                                 <div className="roi-text">
                                     <h2 className="roi-title">Quick ROI Example</h2>
                                     <p className="roi-subtitle">Clinic with 300 calls / month</p>
-                                    <button className="type_button">
+                                    <button className="type_button price-hero" id='cal_home_btn'>
                                         <span>
-                                            <img src={group} alt="" />
+                                            <img className='imgGroup' src={group} alt="" />
                                         </span>{" "}
                                         Run the cost calculator{" "}
                                         <span className="arrow">

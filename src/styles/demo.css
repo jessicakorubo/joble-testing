@@ -4,6 +4,7 @@
 .demo_hero {
     padding: 50px 20px;
     text-align: center;
+    margin-top: 150px;
 }
 .demo-calls {
     display: flex;

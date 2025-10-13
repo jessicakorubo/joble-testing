@@ -7,6 +7,7 @@ import PreCall from '../pages/PreCall';
 import Services from '../pages/Services';
 import Calculator from '../pages/Calculator';
 import Industries from '../pages/Industries';
+import Solutions from '../pages/Solutions';
 
 const AppRoutes = () => {
   return (
@@ -22,6 +23,7 @@ const AppRoutes = () => {
                 <Route path='/precall' element={<PreCall/>}/>
                 <Route path='/services' element={<Services/>}/>
                 <Route path='/calculator' element={<Calculator/>}/>
+                <Route path='/solutions' element={<Solutions/>}/>
             </Routes>
         </BrowserRouter>
     </div>
