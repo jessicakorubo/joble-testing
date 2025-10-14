@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import "../styles/solutions.css"
+import "../styles/solutions.css";
 import MainLayout from '../layout/MainLayout';
 import arrow from "../assets/arrow-right.svg";
 import call from "../assets/call.svg";
@@ -13,7 +13,7 @@ import shield from "../assets/shield.png";
 import network from "../assets/network.png";
 import hardware from "../assets/hardware.png";
 import demoVideo from "../assets/joble_video.mp4";
-// import iconVoice from "../assets/icon-voice.png";    
+// import iconVoice from "../assets/icon-voice.png";
 
 const Solutions = () => {
 
@@ -35,7 +35,7 @@ const Solutions = () => {
     return (
         <div>
             <MainLayout>
-                <div className="industries-page">
+                <div className="solutions-page">
                     <section className="hero">
                         <div className="hero-content">
                             <div className="tag">The Joble Workplace-OS Solution</div>
@@ -53,7 +53,7 @@ const Solutions = () => {
                                 sovereign-ready workspace you can launch in the cloud or run on-premises.
                             </p>
 
-                            <div className="hero-buttons">
+                            <div className="heroix-buttons">
                                 <button className="type_button">
                                     Get started for free{" "}
                                     <span className="arrow">
@@ -230,25 +230,25 @@ const Solutions = () => {
                             <h3>
                                 Built to Save you Time and Money
                             </h3>
-                           
-                                <div className="landing-boxes">
-                                    <div className="landing-box">
-                                        <h4>70%</h4>
-                                        <p>Total cost reduction</p>
-                                        <p>(500-user 4-yr benchmark)</p>
-                                    </div>
-                                    <div className="landing-box">
-                                        <h4>70%</h4>
-                                        <p>Per employee per week reclaimed</p>
-                                        <p>(fewer logins & shorter meetings)</p>
-                                    </div>
-                                    <div className="landing-box">
-                                        <h4>70%</h4>
-                                        <p>Total cost reduction</p>
-                                        <p>Great for ESG targets and generator budgets</p>
-                                    </div>
+
+                            <div className="landing-boxes">
+                                <div className="landing-box">
+                                    <h4>70%</h4>
+                                    <p>Total cost reduction</p>
+                                    <p>(500-user 4-yr benchmark)</p>
                                 </div>
-                           
+                                <div className="landing-box">
+                                    <h4>70%</h4>
+                                    <p>Per employee per week reclaimed</p>
+                                    <p>(fewer logins & shorter meetings)</p>
+                                </div>
+                                <div className="landing-box">
+                                    <h4>70%</h4>
+                                    <p>Total cost reduction</p>
+                                    <p>Great for ESG targets and generator budgets</p>
+                                </div>
+                            </div>
+
 
                         </div>
                         <div className="landing-frame">
@@ -330,5 +330,4 @@ const Solutions = () => {
     )
 }
 
-export default Solutions;
-
+export default Solutions

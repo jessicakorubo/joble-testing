@@ -1,0 +1,164 @@
+.industries-page {
+    margin-top: 200px;
+}
+.ind-hero {
+    text-align: center;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ind-hero h1 {
+    padding: 0 12rem;
+}
+
+/* USECASES ITEMS DYNAMIC STYLES */
+.container-container {
+    padding: 2rem 6rem;
+}
+.usecases-container {
+  display: flex;
+  gap: 1.5rem;
+  padding: 2rem;
+  border: 2px solid #00b8e0;
+  border-radius: 12px;
+  background: #f9feff;
+  flex-wrap: wrap;
+}
+
+.left-panel {
+  flex: 1;
+  min-width: 250px;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.case-img-con {
+  width: 100%;
+  height: 170px;
+  border-radius: 8px;
+  text-align: center;
+  background: #E1F7FC;
+  margin-bottom: 1rem;
+  padding: 1.5rem 0;
+}
+
+
+.category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.category-item {
+  position: relative;
+  border: 1px solid #00b8e0;
+  border-radius: 6px;
+  padding:1rem;
+  background: #fff;
+  color: #00b8e0;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* keeps text left, arrow right */
+  transition: all 0.25s ease;
+}
+
+.category-item:hover {
+  background: #dff6fa;
+}
+
+.category-item.active {
+  background: #00b8e0;
+  color: #fff;
+}
+
+.right-panel {
+  flex: 1;
+  background: #e7faff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  min-width: 280px;
+  line-height: 1.6;
+}
+
+.right-icon {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.roi-button {
+  margin-top: 1rem;
+  background: #00b8e0;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 9999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.roi-button:hover {
+  background: #06c2ed;
+  transform: translateY(-2px);
+}
+
+.category-item:hover {
+  background: #dff6fa;
+}
+
+.category-item.active {
+  background: #00b8e0;
+  color: #fff;
+}
+
+.active-arrow {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+  animation: popIn 0.3s ease;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.top-image {
+  width: 80%;
+  height: 100%;
+  margin-bottom: 1rem;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+.roi-industries {
+  margin-top: 100px;
+}
+.roi-card #cal_home_btn {
+    width: 100%;
+}
+.dyn-usecases {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width:890px) {
+    .ind-hero h1{
+        font-size: 35px;
+        padding: 0 3rem;
+    }
+    .container-container {
+        padding: 2rem 3rem;
+    }
+}

@@ -76,7 +76,7 @@
   backdrop-filter: blur(5px); /* gives a frosted glass look */
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 15px 40px;
     gap: 50px;
 

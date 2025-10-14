@@ -1,5 +1,7 @@
 .services-page {
-    margin-top: 160px;
+    margin-top: 250px;
+}.service-title {
+    padding: 2rem 8rem;
 }
 .service-page-buttons {
     display: flex;
@@ -83,8 +85,9 @@
 }
 
 @media screen and (max-width: 890px) {
-    .services-page h1{
+    .service-title{
         font-size: 32px;
+        padding: 1rem 2rem;
     }
     .service-page-container {
         flex-direction: column;

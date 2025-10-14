@@ -13,6 +13,7 @@ import checkIcon from "../assets/checkIcon.png";
 import ResponsiveSVG from '../components/ResponsiveSVG';
 import group from "../assets/grouping.svg";
 import arrow from "../assets/arrow-right.svg";
+import FeaturesSection from '../components/FeaturesSection';
 
 
 // import { Sparkles } from "lucide-react";
@@ -125,46 +126,8 @@ const Pricing = () => {
                             <img src={chatMockup} alt="Platform preview" />
                         </div>
                     </section>
-                    <section className="includes">
-                        <h2>What's included by default</h2>
-                        <section className="w-full flex flex-col items-center py-12">
-                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 max-w-4xl w-full">
-                                {features.slice(0, 10).map((feature, idx) => (
-                                    <div
-                                        key={idx}
-                                        className="flex items-center gap-2 bg-white border rounded-2xl px-4 py-3 shadow-sm hover:shadow-md transition feature-card"
-                                    >
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="53" viewBox="0 0 52 53" fill="none">
-                                            <path d="M11.4119 31.3809L22.702 31.4879C22.8371 31.4905 22.9694 31.5273 23.0864 31.5949C23.2035 31.6625 23.3014 31.7586 23.3712 31.8743L29.109 41.5983C29.1972 41.7454 29.3309 41.8598 29.4899 41.9241C29.6489 41.9884 29.8246 41.9992 29.9902 41.9548C30.1559 41.9105 30.3026 41.8133 30.4081 41.6781C30.5137 41.5429 30.5723 41.377 30.5751 41.2055L30.6822 29.9154C30.6848 29.7802 30.7216 29.648 30.7891 29.531C30.8567 29.4139 30.9528 29.3159 31.0686 29.2461L40.7925 23.5084C40.9396 23.4202 41.054 23.2865 41.1183 23.1275C41.1827 22.9685 41.1935 22.7928 41.1491 22.6272C41.1047 22.4615 41.0075 22.3148 40.8723 22.2092C40.7371 22.1037 40.5712 22.0451 40.3997 22.0423L29.1096 21.9352C28.9745 21.9326 28.8422 21.8958 28.7252 21.8283C28.6082 21.7607 28.5102 21.6646 28.4404 21.5488L22.7026 11.8249C22.6144 11.6778 22.4807 11.5634 22.3217 11.499C22.1627 11.4347 21.9871 11.4239 21.8214 11.4683C21.6557 11.5127 21.509 11.6099 21.4035 11.7451C21.2979 11.8803 21.2393 12.0462 21.2365 12.2177L21.1294 23.5078C21.1269 23.6429 21.0901 23.7752 21.0225 23.8922C20.9549 24.0092 20.8588 24.1072 20.7431 24.177L11.0191 29.9148C10.872 30.003 10.7576 30.1367 10.6933 30.2957C10.6289 30.4547 10.6182 30.6303 10.6625 30.796C10.7069 30.9617 10.8041 31.1084 10.9393 31.2139C11.0745 31.3194 11.2404 31.3781 11.4119 31.3809Z" fill="url(#paint0_linear_2144_3477)" stroke="#07C0EA" stroke-width="0.404751" stroke-linecap="round" stroke-linejoin="round" />
-                                            <defs>
-                                                <linearGradient id="paint0_linear_2144_3477" x1="16.162" y1="16.9715" x2="35.6496" y2="36.4516" gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#07C0EA" />
-                                                    <stop offset="0.5" stop-color="#07C0EA" />
-                                                    <stop offset="1" stop-color="#07C0EA" />
-                                                </linearGradient>
-                                            </defs>
-                                        </svg>
-                                        <span className="text-gray-800 text-sm">{feature}</span>
-                                    </div>
-                                ))}
+                    <FeaturesSection features={features} />
 
-                                {/* GDPR controls (full width) */}
-                                <div className="flex items-center gap-2 bg-white border rounded-2xl px-4 py-3 shadow-sm hover:shadow-md transition col-span-1 sm:col-span-2 feature-card gdpr full">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="53" viewBox="0 0 52 53" fill="none">
-                                        <path d="M11.4119 31.3809L22.702 31.4879C22.8371 31.4905 22.9694 31.5273 23.0864 31.5949C23.2035 31.6625 23.3014 31.7586 23.3712 31.8743L29.109 41.5983C29.1972 41.7454 29.3309 41.8598 29.4899 41.9241C29.6489 41.9884 29.8246 41.9992 29.9902 41.9548C30.1559 41.9105 30.3026 41.8133 30.4081 41.6781C30.5137 41.5429 30.5723 41.377 30.5751 41.2055L30.6822 29.9154C30.6848 29.7802 30.7216 29.648 30.7891 29.531C30.8567 29.4139 30.9528 29.3159 31.0686 29.2461L40.7925 23.5084C40.9396 23.4202 41.054 23.2865 41.1183 23.1275C41.1827 22.9685 41.1935 22.7928 41.1491 22.6272C41.1047 22.4615 41.0075 22.3148 40.8723 22.2092C40.7371 22.1037 40.5712 22.0451 40.3997 22.0423L29.1096 21.9352C28.9745 21.9326 28.8422 21.8958 28.7252 21.8283C28.6082 21.7607 28.5102 21.6646 28.4404 21.5488L22.7026 11.8249C22.6144 11.6778 22.4807 11.5634 22.3217 11.499C22.1627 11.4347 21.9871 11.4239 21.8214 11.4683C21.6557 11.5127 21.509 11.6099 21.4035 11.7451C21.2979 11.8803 21.2393 12.0462 21.2365 12.2177L21.1294 23.5078C21.1269 23.6429 21.0901 23.7752 21.0225 23.8922C20.9549 24.0092 20.8588 24.1072 20.7431 24.177L11.0191 29.9148C10.872 30.003 10.7576 30.1367 10.6933 30.2957C10.6289 30.4547 10.6182 30.6303 10.6625 30.796C10.7069 30.9617 10.8041 31.1084 10.9393 31.2139C11.0745 31.3194 11.2404 31.3781 11.4119 31.3809Z" fill="url(#paint0_linear_2144_3477)" stroke="#07C0EA" stroke-width="0.404751" stroke-linecap="round" stroke-linejoin="round" />
-                                        <defs>
-                                            <linearGradient id="paint0_linear_2144_3477" x1="16.162" y1="16.9715" x2="35.6496" y2="36.4516" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#07C0EA" />
-                                                <stop offset="0.5" stop-color="#07C0EA" />
-                                                <stop offset="1" stop-color="#07C0EA" />
-                                            </linearGradient>
-                                        </defs>
-                                    </svg>
-                                    <span className="text-gray-800 text-sm">{features[10]}</span>
-                                </div>
-                            </div>
-                        </section>
-                    </section>
                     <section className="addons-section">
                         <div className="addons-container">
                             <div className="addons-left">

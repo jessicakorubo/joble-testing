@@ -14,7 +14,7 @@ const Services = () => {
         <div>
             <MainLayout>
                 <div className="services-page">
-                    <h1>Faster launch, AI-powered meetings, bullet-proof uptime and financing that kills CapEx.</h1>
+                    <h1 className='service-title'>Faster launch, AI-powered meetings, bullet-proof uptime and financing that kills CapEx.</h1>
                     <div className="service-page-buttons">
                         <button className="type_button">
                             Try the live web demo{" "}
@@ -180,28 +180,11 @@ const Services = () => {
                             </div>
                         </div>
                     </div>
-                    <ResponsiveSVG>
-                        <div className="curve-text">
-                            <h2>Ready to see it on your calls?</h2>
-                            <p>Let's stop the missed revenu and no shows</p>
-                            <div className="buttons">
-                                <button className="white_bg_button" id="cons_home_btn">
-                                    {" "}
-                                    Book a 20 mins consult
-                                </button>
-                                <button className="type_button" id="transparent_btn">
-                                    {" "}
-                                    Try the live web demo
-                                </button>
-                            </div>
-                            <div className="email">
-                                <p>
-                                    Prefer email?{" "}
-                                    <a href="mailto:sales@joble.app">sales@joble.app</a>
-                                </p>
-                            </div>
-                        </div>
-                    </ResponsiveSVG>
+                    <ResponsiveSVG
+                        title="Ready to price your rollout?"
+                        paragraph="Get tailored quotes in minutes"
+                        link="sales@joble.app"
+                    />
                 </div>
 
             </MainLayout>

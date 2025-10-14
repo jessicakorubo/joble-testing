@@ -139,19 +139,22 @@
 }
 
 .includes h2 {
-  font-size: 1.75rem;
+  font-size: 2.75rem;
   font-weight: 700;
   margin-bottom: 2rem;
   color: #111827;
 }
-
+.feature-icon-svg {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+}
 /* Feature grid layout */
 .includes .grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(300px, 1fr));
   gap: 1rem;
   width: 100%;
-  max-width: 860px;
 }
 
 /* Each feature card */
@@ -159,12 +162,19 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  background: #ffffff;
+  background: #FAFAFA;
   border: 1px solid #e5e7eb;
-  border-radius: 9999px; /* fully rounded pill shape */
+  border-radius: 15px; /* fully rounded pill shape */
   padding: 0.9rem 1.2rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
   transition: box-shadow 0.2s ease, transform 0.2s ease;
+  width: 100%;
+}
+.offers-con {
+  width: 80%;
+  font-family: 'TT Hoves Pro', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .includes .feature-card:hover {
@@ -172,11 +182,7 @@
   transform: translateY(-2px);
 }
 
-.includes .feature-card svg {
-  flex-shrink: 0;
-  width: 20px;
-  height: 20px;
-}
+
 
 .includes .feature-card span {
   font-size: 0.95rem;
@@ -189,6 +195,9 @@
   grid-column: span 2;
   justify-content: center
 }
+
+
+/* ADDONS SECTION */
 .addons-section {
   background: var(--bg-light);
   padding: 80px 6%;
@@ -296,8 +305,8 @@
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
   position: relative;
   overflow: hidden;
-  max-width: 800px;
-  width: 100%;
+  width: 95%;
+  height: 280px;
 }
 
 .roi-content {
@@ -305,18 +314,29 @@
   position: relative;
   z-index: 2;
   display: flex;
+  justify-content: space-around;
   align-items: center;
 }
 
 .roi-title {
-  font-size: 42px;
+  font-size: 50px;
   font-weight: 700;
   margin-top: 0;
   color: var(--text-dark);
+  font-family: 'Bricolage Grotesque', sans-serif;
   text-align: left !important;
   margin-bottom: 6px;
 }
-
+@media (max-width: 890px) {
+  .roi-title {
+    font-size: 32px;
+    text-align: center !important;
+  }
+  .roi-content {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
 .roi-subtitle {
   font-family: 'TT Hoves Pro', sans-serif;
   font-size: 15px;
@@ -341,7 +361,7 @@
   color: var(--text-dark);
 }
 .roi-list li span {
-    font-family: 'TT Hoves Pro', sans-serif;
+    font-family: 'TT Hoves Pro Demi', sans-serif;
     font-weight: 900;;
 }
 .roi-icon {
@@ -431,6 +451,9 @@
     padding: 48px 5%;
   }
   .pricing-right img{ max-width: 420px; }
+  .roi-card {
+    height: max-content;
+  }
 }
 
 @media (max-width: 720px){
@@ -465,4 +488,5 @@
   .pricing-card{
     width: 100%;
   }
+  
 }

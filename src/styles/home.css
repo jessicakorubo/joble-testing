@@ -238,6 +238,7 @@ p.outcome {
 }
 .service-gif {
     width: 60%;
+    height: 550px;
     position: relative;
 }
 .service-pics {
@@ -272,9 +273,9 @@ p.outcome {
 .service-pics img {
     width: 100%;
     height: 100%;
-    max-width: 500px;
+    /* max-width: 500px; */
     /* Adjust as needed */
-    object-fit: cover;
+    /* object-fit: cover; */
     border-radius: 10px;
     z-index: -1;
 }
@@ -282,7 +283,7 @@ p.outcome {
 .service-pics .fade-image {
     width: 100%;
     height: 100%;
-    max-width: 500px;
+    /* max-width: 500px; */
     /* Adjust as needed */
     border-radius: 12px;
     object-fit: cover;
@@ -1021,7 +1022,7 @@ h2 {
     align-items: center;
     justify-content: center;
     font-family: 'TT Hoves Pro', sans-serif;
-    padding: 1% 1.7%;
+    padding: 9px 30px;
     border-radius: 35px;
     text-align: center;
     width: max-content;
@@ -1288,6 +1289,28 @@ h2 {
     .curve-text .type_button{
         margin-top: 0;
     }
+    .roi-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem; /* adds space between text/list/button */
+  }
+
+  .roi-text {
+    order: 1;
+    width: 100%;
+  }
+
+  .list-items {
+    order: 2;
+    width: 100%;
+  }
+
+  /* move button below the list */
+  .roi-text button {
+    order: 3;
+    align-self: flex-start;
+    margin-top: 1rem;
+  }
 }
 .eclipsed-bg {
   position: absolute;

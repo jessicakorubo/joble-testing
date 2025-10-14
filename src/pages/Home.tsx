@@ -11,7 +11,7 @@ import people from "../assets/people.png";
 import video from "../assets/video.png";
 import clock from "../assets/clock.png";
 import web from "../assets/web.png";
-import outboundAI from "../assets/outboundAI.png";
+import outboundAI from "../assets/outboundAICaller.png";
 import phone_statement from "../assets/phone_statement@3x.png";
 import iconCounter1 from "../assets/iconCounter1.png";
 import iconCounter2 from "../assets/iconCounter2.png";
