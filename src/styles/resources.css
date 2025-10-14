@@ -1,0 +1,252 @@
+.resources-page {
+    margin-top: 200px;
+}
+.resources-page h2 {
+    font-size: 40px;
+    padding: 1rem 24rem;
+}
+.resources-page {
+  margin-top: 200px;
+  text-align: center;
+}
+
+.resources-page h2 {
+  font-size: 40px;
+  padding: 1rem 10rem;
+  line-height: 1.3;
+}
+
+.resources-carousel-wrapper {
+  position: relative;
+  margin: 3rem auto;
+  max-width: 1200px;
+  overflow: hidden;
+}
+
+.resources-carousel {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.resources-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+
+.resource-card:hover {
+  transform: translateY(-4px);
+}
+
+.resource-image {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+}
+
+.resource-image img:first-child {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.resource-logo {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.resource-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 1rem 1rem 0.5rem;
+}
+
+.resource-card p {
+  font-size: 0.95rem;
+  color: #444;
+  padding: 0 1rem 1rem;
+}
+
+.read-more-btn {
+  display: block;
+  background: #00b8e0;
+  color: white;
+  text-align: center;
+  border-radius: 30px;
+  padding: 0.75rem 1rem;
+  margin: 0 1rem 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background: #009cc1;
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 45%;
+  
+}
+.scroller {
+transform: translateY(-50%);
+  background: #fafafa;
+  /* color: white; */
+  margin-top: 30px;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.scroll-btn:hover {
+  background: #009cc1;
+}
+
+.scroll-btn.left {
+  left: -20px;
+}
+
+.scroll-btn.right {
+  right: -20px;
+}
+/* 🌀 Smooth subtle animation pause on hover */
+.resources-carousel-wrapper:hover .resource-card {
+  transform: none;
+}
+
+/* Prevent scrollbars flickering */
+.resources-carousel {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+/* Carousel layout */
+.resources-carousel-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 2rem 0;
+}
+
+.resources-carousel {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.resources-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.resource-card {
+  flex: 0 0 350px;
+  background: #f9fdff;
+  border-radius: 24px;
+  padding: 1rem;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resource-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(7, 192, 234, 0.2);
+}
+
+.resource-image img {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.read-more-btn {
+  display: inline-block;
+  background-color: #07c0ea;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 24px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: #05a9cf;
+}
+
+/* ✅ Scroll buttons BELOW the carousel */
+.scroll-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.scroll-btn {
+  background-color: #07c0ea;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-btn:hover {
+  background-color: #05a9cf;
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 890px) {
+  .resources-page h2 {
+    padding: 1rem 2rem;
+    font-size: 32px;
+  }
+
+  .resource-card {
+    flex: 0 0 80%;
+  }
+
+  .scroll-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 890px) {
+    .resources-page h2 {
+        padding: 1rem 2rem;
+        font-size: 32px;
+    }
+}
+.see-all {
+    border: 1px solid var(--primary-color);
+    border-radius: 30px;
+    padding: 1rem 5rem;
+    font-weight: 600;
+    background: transparent;
+    color: var(--primary-color);
+}

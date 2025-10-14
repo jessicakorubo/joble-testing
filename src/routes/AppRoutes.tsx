@@ -9,6 +9,7 @@ import Calculator from '../pages/Calculator';
 import Industries from '../pages/Industries';
 import Solutions from '../pages/Solutions';
 import UseCases from '../pages/UseCases';
+import Resources from '../pages/Resources';
 
 const AppRoutes = () => {
   return (
@@ -19,7 +20,7 @@ const AppRoutes = () => {
                 <Route path='/pricing' element={<Pricing/>}/>
                 <Route path='/industries' element={<Industries/>}/>
                 <Route path='/use-cases' element={<UseCases/>}/>
-                {/* <Route path='/resources' element={<Resources/>}/> */}
+                <Route path='/resources' element={<Resources/>}/>
                 <Route path='/live-demo' element={<Demo/>}/> 
                 <Route path='/precall' element={<PreCall/>}/>
                 <Route path='/services' element={<Services/>}/>
