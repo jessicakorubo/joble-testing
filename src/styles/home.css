@@ -1042,7 +1042,11 @@ h2 {
     background-color: rgba(245, 212, 60, 0.30);
     color: #F5D43C;
 }
-
+.company_logos{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
 /* ---------- KEYFRAMES ---------- */
 @keyframes fadeIn {
     from {
