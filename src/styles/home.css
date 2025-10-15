@@ -7,7 +7,8 @@ body {
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    margin-top: 15rem; /* 250px */
+    margin-top: 15rem;
+    /* 250px */
 }
 
 /* Hero text */
@@ -18,8 +19,10 @@ body {
 .hero-text p {
     text-align: left;
     font-family: 'TT Hoves Pro', sans-serif;
-    font-size: 1.6rem; /* 25px */
-    margin-top: 1.25rem; /* 20px */
+    font-size: 1.6rem;
+    /* 25px */
+    margin-top: 1.25rem;
+    /* 20px */
 }
 
 /* Outbound badge */
@@ -66,13 +69,15 @@ body {
 
 .right-hero-section img {
     width: 100%;
-    max-width: 31rem; /* 500px */
+    max-width: 31rem;
+    /* 500px */
     height: auto;
 }
 
 .left-hero-section .outbound-line img {
     width: 100%;
-    max-width: 37.5rem; /* 600px */
+    max-width: 37.5rem;
+    /* 600px */
     height: auto;
 }
 
@@ -123,11 +128,13 @@ body {
 }
 
 .switch h1 {
-    font-size: 3.2rem; /* 50px */
+    font-size: 3.2rem;
+    /* 50px */
 }
 
 .switch p {
-    font-size: 1.25rem; /* 20px */
+    font-size: 1.25rem;
+    /* 20px */
     color: #333;
     font-family: 'TT Hoves Pro', sans-serif;
     margin-top: 1.25rem;
@@ -153,19 +160,22 @@ body {
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
     padding: 1.25rem;
     text-align: center;
-    width: 14.375rem; /* 230px */
+    width: 14.375rem;
+    /* 230px */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 15.625rem; /* 250px */
+    height: 15.625rem;
+    /* 250px */
 }
 
 .card h3 {
     font-family: 'TT Hoves Pro', sans-serif;
     color: #002D56;
     text-transform: capitalize;
-    font-size: 1.125rem; /* 18px */
+    font-size: 1.125rem;
+    /* 18px */
     line-height: 120%;
     font-weight: 500;
 }
@@ -174,7 +184,8 @@ body {
     color: #002D56;
     text-align: center;
     font-family: "TT Hoves Pro Demi", sans-serif;
-    font-size: 1.25rem; /* 20px */
+    font-size: 1.25rem;
+    /* 20px */
     font-weight: 900;
     line-height: 120%;
     text-transform: capitalize;
@@ -182,18 +193,20 @@ body {
 
 /* Background ellipse container */
 .background-ellipse {
-   position: relative;
-   overflow: visible;
+    position: relative;
+    overflow: visible;
 }
 
 /* Joble section */
 .joble {
     text-align: center;
-    margin-top: 6.25rem; /* 100px */
+    margin-top: 6.25rem;
+    /* 100px */
 }
 
 .joble h2 {
-    font-size: 3.2rem; /* 50px */
+    font-size: 3.2rem;
+    /* 50px */
 }
 
 /* Service layout */
@@ -210,7 +223,8 @@ body {
     z-index: -1;
     flex: 1;
     text-align: left;
-    margin-bottom: 3.125rem; /* 50px */
+    margin-bottom: 3.125rem;
+    /* 50px */
 }
 
 .service:hover {
@@ -236,7 +250,8 @@ p.outcome {
 /* Service GIF */
 .service-gif {
     width: 60%;
-    height: 34.4rem; /* 550px */
+    height: 34.4rem;
+    /* 550px */
     position: relative;
 }
 
@@ -248,7 +263,8 @@ p.outcome {
 
 .service h3 {
     font-weight: 900;
-    font-size: 1.5rem; /* 24px */
+    font-size: 1.5rem;
+    /* 24px */
     font-family: 'TT Hoves Pro Bold', sans-serif;
 }
 
@@ -276,14 +292,16 @@ p.outcome {
 .service-pics img {
     width: 100%;
     height: 100%;
-    border-radius: 0.625rem; /* 10px */
+    border-radius: 0.625rem;
+    /* 10px */
     z-index: -1;
 }
 
 .service-pics .fade-image {
     width: 100%;
     height: 100%;
-    border-radius: 0.625rem; /* 10px */
+    border-radius: 0.625rem;
+    /* 10px */
     object-fit: cover;
     animation: fadeIn 0.6s ease-in forwards;
 }
@@ -294,7 +312,8 @@ p.outcome {
 }
 
 .landing {
-    height: 23.75rem; /* 380px */
+    height: 23.75rem;
+    /* 380px */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -310,7 +329,8 @@ p.outcome {
     width: 100%;
     position: absolute;
     height: auto;
-    bottom: -0.625rem; /* 10px */
+    bottom: -0.625rem;
+    /* 10px */
 }
 
 .landing-frame img {
@@ -322,54 +342,67 @@ p.outcome {
     font-optical-sizing: auto;
     font-weight: 700;
     width: 40%;
-    font-size: 1.875rem; /* 30px */
+    font-size: 1.875rem;
+    /* 30px */
 }
 
 /* ---------------- RESULTS SECTION ---------------- */
 .results {
     display: flex;
-    margin-top: 6.25rem; /* 100px */
+    margin-top: 6.25rem;
+    /* 100px */
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .results h4 {
-    font-size: 1.25rem; /* 20px */
-    line-height: 0.9375rem; /* 15px */
+    font-size: 1.25rem;
+    /* 20px */
+    line-height: 0.9375rem;
+    /* 15px */
 }
 
 .results .mileage {
     font-family: 'TT Hoves Pro', sans-serif;
-    font-size: 1.25rem; /* 20px */
+    font-size: 1.25rem;
+    /* 20px */
     color: #080808;
     font-weight: 900;
-    line-height: 1.5rem; /* 24px */
-    margin-top: 0.625rem; /* 10px */
+    line-height: 1.5rem;
+    /* 24px */
+    margin-top: 0.625rem;
+    /* 10px */
 }
 
 .result-cards {
     display: flex;
-    padding: 1.25rem 5rem; /* 20px 80px */
+    padding: 1.25rem 5rem;
+    /* 20px 80px */
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    margin-top: 1.875rem; /* 30px */
+    margin-top: 1.875rem;
+    /* 30px */
     flex-wrap: wrap;
 }
 
 .result-cards .result-card {
     text-align: left;
-    min-width: 16.375rem; /* 262px */
+    min-width: 16.375rem;
+    /* 262px */
     max-height: fit-content;
-    border-radius: 1.25rem; /* 20px */
-    padding: 1.25rem; /* 20px */
+    border-radius: 1.25rem;
+    /* 20px */
+    padding: 1.25rem;
+    /* 20px */
     background: #F7F7F7;
 }
 
 /* ---------------- HOW IT WORKS ---------------- */
 .howItWorks {
-    margin: 6.25rem 0; /* 100px 0 */
+    margin: 6.25rem 0;
+    /* 100px 0 */
 }
 
 .steps {
@@ -377,13 +410,16 @@ p.outcome {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    margin-top: 3.125rem; /* 50px */
+    margin-top: 3.125rem;
+    /* 50px */
 }
 
 .step {
     text-align: left;
-    padding: 1.25rem; /* 20px */
-    border-radius: 1.25rem; /* 20px */
+    padding: 1.25rem;
+    /* 20px */
+    border-radius: 1.25rem;
+    /* 20px */
     border: 1px solid var(--Grey-500, #E4E4E4);
 }
 
@@ -412,39 +448,47 @@ p.outcome {
 }
 
 .roi {
-    margin-bottom: 9.375rem; /* 150px */
+    margin-bottom: 9.375rem;
+    /* 150px */
 }
 
 .roi_border {
-    width: 18.75rem; /* 300px */
-    border-radius: 0.9375rem; /* 15px */
+    width: 18.75rem;
+    /* 300px */
+    border-radius: 0.9375rem;
+    /* 15px */
     border: 1px solid var(--Grey-500, #E4E4E4);
     background: var(--Grey-100, #FAFAFA);
 }
 
 .break-even {
-    width: 18.75rem; /* 300px */
+    width: 18.75rem;
+    /* 300px */
 }
 
 .small {
-    font-size: 0.875rem; /* 14px */
+    font-size: 0.875rem;
+    /* 14px */
     font-family: 'TT Hoves Pro', sans-serif;
 }
 
 .tt-bold {
     font-family: 'TT Hoves Pro Bold', sans-serif;
-    font-size: 0.875rem; /* 14px */
+    font-size: 0.875rem;
+    /* 14px */
 }
 
 .extra p {
     width: 78%;
     text-align: center;
     margin: auto;
-    padding: 1.25rem 0.625rem; /* 20px 10px */
+    padding: 1.25rem 0.625rem;
+    /* 20px 10px */
 }
 
 .example {
-    width: 18.75rem; /* 300px */
+    width: 18.75rem;
+    /* 300px */
     font-weight: 500;
 }
 
@@ -464,29 +508,34 @@ h2 {
     justify-content: center;
     text-align: center;
     gap: 0.7rem;
-    padding: 0.9375rem 1.875rem; /* 15px 30px */
+    padding: 0.9375rem 1.875rem;
+    /* 15px 30px */
     color: #fff;
-    border-radius: 2.8125rem; /* 45px */
+    border-radius: 2.8125rem;
+    /* 45px */
     background-color: #07C0EA;
     border: none;
     cursor: pointer;
 }
 
 .type_button:hover {
-    box-shadow: 0.625rem 0.25rem 0.75rem #07C0EA; /* 10px 4px 12px */
+    box-shadow: 0.625rem 0.25rem 0.75rem #07C0EA;
+    /* 10px 4px 12px */
     transition: 0.5s box-shadow;
 }
 
 #cal_home_btn,
 #cons_home_btn {
-    margin-top: 2.5rem; /* 40px */
+    margin-top: 2.5rem;
+    /* 40px */
 }
 
 #cal_home_btn {
     position: relative;
     overflow: hidden;
     transition: all 0.6s ease;
-    width: 17.5rem; /* 280px */
+    width: 17.5rem;
+    /* 280px */
 }
 
 #cal_home_btn .imgGroup {
@@ -494,7 +543,8 @@ h2 {
 }
 
 #cal_home_btn:hover {
-    width: 15.625rem; /* 250px */
+    width: 15.625rem;
+    /* 250px */
 }
 
 #cal_home_btn:hover .imgGroup {
@@ -526,8 +576,10 @@ h2 {
 }
 
 .type_button span.arrow img {
-    width: 1.125rem; /* 18px */
-    height: 1.125rem; /* 18px */
+    width: 1.125rem;
+    /* 18px */
+    height: 1.125rem;
+    /* 18px */
     background-color: white;
     border-radius: 50%;
     display: block;
@@ -542,19 +594,25 @@ h2 {
 .feature-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 18.75rem 12.5rem 18.75rem; /* 300px 200px 300px */
-    gap: 0.625rem; /* 10px */
+    grid-template-rows: 18.75rem 12.5rem 18.75rem;
+    /* 300px 200px 300px */
+    gap: 0.625rem;
+    /* 10px */
     padding: 1rem;
-    border-radius: 0.5rem; /* 8px */
+    border-radius: 0.5rem;
+    /* 8px */
 }
 
 /* Card styling */
 .feature-grid {
     background-color: #FFFFFF;
-    border-radius: 1rem; /* 16px */
-    padding: 1.25rem; /* 20px */
+    border-radius: 1rem;
+    /* 16px */
+    padding: 1.25rem;
+    /* 20px */
     text-align: center;
-    box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.03); /* 0 4px 20px */
+    box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.03);
+    /* 0 4px 20px */
     border: 1px solid #e5e7eb;
     display: flex;
     flex-direction: column;
@@ -565,20 +623,26 @@ h2 {
 .feature-grid h3 {
     color: #333;
     font-family: 'TT Hoves Pro', sans-serif;
-    font-size: 1.5625rem; /* 25px */
+    font-size: 1.5625rem;
+    /* 25px */
 }
 
 .feature-icon {
     background-color: #B9FFD4;
-    padding: 0.625rem; /* 10px */
-    border-radius: 0.86rem; /* 13.757px */
+    padding: 0.625rem;
+    /* 10px */
+    border-radius: 0.86rem;
+    /* 13.757px */
 }
 
 .feature-items div {
-    padding: 0.625rem 1.25rem; /* 10px 20px */
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
     background-color: #F8F8F8;
-    border-radius: 0.3125rem; /* 5px */
-    margin-top: 0.625rem; /* 10px */
+    border-radius: 0.3125rem;
+    /* 5px */
+    margin-top: 0.625rem;
+    /* 10px */
 }
 
 /* Explicit placement for mosaic layout */
@@ -603,7 +667,9 @@ h2 {
 }
 
 /* Responsive stacking */
-@media (max-width: 50rem) { /* 800px */
+@media (max-width: 50rem) {
+
+    /* 800px */
     .feature-card {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
@@ -620,7 +686,8 @@ h2 {
 
 /* ---------------- STACKS SECTION ---------------- */
 .stack-section {
-    margin-top: 9.375rem; /* 150px */
+    margin-top: 9.375rem;
+    /* 150px */
 }
 
 .stacks {
@@ -630,12 +697,17 @@ h2 {
 }
 
 .stack {
-    border-radius: 1.5rem; /* 24px */
-    min-height: 15.625rem; /* 250px */
-    max-width: 18.75rem; /* 300px */
-    width: 15.625rem; /* 250px */
+    border-radius: 1.5rem;
+    /* 24px */
+    min-height: 15.625rem;
+    /* 250px */
+    max-width: 18.75rem;
+    /* 300px */
+    width: 15.625rem;
+    /* 250px */
     border: 1px solid #E4E4E4;
-    padding: 1.5625rem; /* 25px */
+    padding: 1.5625rem;
+    /* 25px */
     background: #FAFAFA;
 }
 
@@ -651,8 +723,10 @@ h2 {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 1rem; /* 16px */
-    height: 1rem; /* 16px */
+    width: 1rem;
+    /* 16px */
+    height: 1rem;
+    /* 16px */
     background-image: url('../assets/checkIcon.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -663,8 +737,10 @@ h2 {
     background-color: #f9fafb;
     color: #374151;
     font-size: 0.9rem;
-    padding: 0.5rem 0.625rem 0.5rem 2.125rem; /* 8px 10px 8px 34px */
-    border-radius: 0.5rem; /* 8px */
+    padding: 0.5rem 0.625rem 0.5rem 2.125rem;
+    /* 8px 10px 8px 34px */
+    border-radius: 0.5rem;
+    /* 8px */
 }
 
 /* ---------------- VALUE GAIN ---------------- */
@@ -674,8 +750,10 @@ h2 {
     justify-content: center;
     align-items: center;
     background: #FAFAFA;
-    margin-top: 6.25rem; /* 100px */
-    padding-top: 9.375rem; /* 150px */
+    margin-top: 6.25rem;
+    /* 100px */
+    padding-top: 9.375rem;
+    /* 150px */
 }
 
 
@@ -683,8 +761,10 @@ h2 {
 
 .long-arrow {
     position: relative;
-    width: 18.75rem; /* 300px */
-    height: 0.125rem; /* 2px */
+    width: 18.75rem;
+    /* 300px */
+    height: 0.125rem;
+    /* 2px */
     background-color: #00b4d8;
 }
 
@@ -695,16 +775,21 @@ h2 {
     right: 0;
     top: 50%;
     transform: translateY(-50%) rotate(45deg);
-    width: 0.5rem; /* 8px */
-    height: 0.5rem; /* 8px */
-    border-top: 0.125rem solid #00b4d8; /* 2px */
+    width: 0.5rem;
+    /* 8px */
+    height: 0.5rem;
+    /* 8px */
+    border-top: 0.125rem solid #00b4d8;
+    /* 2px */
     border-right: 0.125rem solid #00b4d8;
 }
 
 /* ---------------- GAIN SECTION ---------------- */
 .gain-section {
-    margin-top: 9.375rem; /* 150px */
-    margin-bottom: 9.375rem; /* 150px */
+    margin-top: 9.375rem;
+    /* 150px */
+    margin-bottom: 9.375rem;
+    /* 150px */
     position: relative;
     background-color: #FAFAFA;
 }
@@ -712,7 +797,8 @@ h2 {
 .gain-container {
     display: flex;
     justify-content: center;
-    gap: 2.1875rem; /* 35px */
+    gap: 2.1875rem;
+    /* 35px */
     align-items: center;
     width: 80%;
     margin: auto;
@@ -721,7 +807,8 @@ h2 {
 .gain-list {
     width: 65%;
     font-family: 'Bricolage Grotesque', sans-serif;
-    font-size: 2.5rem; /* 40px */
+    font-size: 2.5rem;
+    /* 40px */
     font-weight: 500;
     text-align: left;
     font-style: normal;
@@ -733,10 +820,12 @@ h2 {
 
 .gain-joble {
     position: absolute;
-    top: -1.875rem; /* -30px */
+    top: -1.875rem;
+    /* -30px */
     left: 75%;
     transform: translateX(-50%);
-    width: 9.375rem; /* 150px */
+    width: 9.375rem;
+    /* 150px */
     height: 1;
     z-index: 100;
 }
@@ -745,30 +834,37 @@ h2 {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border: 0.5rem solid white; /* 8px */
+    border: 0.5rem solid white;
+    /* 8px */
 }
 
 .gains ul {
     font-weight: 500;
     display: flex;
     font-family: 'TT Hoves Pro', sans-serif;
-    font-size: 1.25rem; /* 20px */
+    font-size: 1.25rem;
+    /* 20px */
     color: white;
     flex-direction: column;
     justify-content: flex-start;
 }
 
 .gain-border {
-    padding: 0.3125rem; /* 5px */
-    border: 0.125rem dashed var(--primary-color); /* 2px */
-    border-radius: 2.375rem; /* 38px */
+    padding: 0.3125rem;
+    /* 5px */
+    border: 0.125rem dashed var(--primary-color);
+    /* 2px */
+    border-radius: 2.375rem;
+    /* 38px */
 }
 
 .gain-bg {
     background: #07C0EA;
     height: max-content;
-    padding: 1.875rem; /* 30px */
-    border-radius: 2.375rem; /* 38px */
+    padding: 1.875rem;
+    /* 30px */
+    border-radius: 2.375rem;
+    /* 38px */
 }
 
 .gain-button {
@@ -787,46 +883,56 @@ h2 {
 }
 
 .pricing-card-home {
-    border-radius: 1.12rem; /* 17.907px */
-    width: 15.625rem; /* 250px */
+    border-radius: 1.12rem;
+    /* 17.907px */
+    width: 15.625rem;
+    /* 250px */
     min-height: fit-content;
     font-family: 'TT Hoves Pro', sans-serif;
     background: #FFF;
-    padding: 1.5625rem; /* 25px */
+    padding: 1.5625rem;
+    /* 25px */
     box-shadow: -0.526rem 0.605rem 5.39rem -0.705rem rgba(0, 0, 0, 0.10);
 }
 
 .pricing-card-home .icon {
     background: #FAFAFA;
-    padding: 0.9375rem; /* 15px */
-    border-radius: 0.86rem; /* 13.757px */
+    padding: 0.9375rem;
+    /* 15px */
+    border-radius: 0.86rem;
+    /* 13.757px */
 }
 
 #platform {
-    line-height: 0.3125rem; /* 5px */
+    line-height: 0.3125rem;
+    /* 5px */
 }
 
 .pricing-card-home h3 {
-    font-size: 0.9375rem; /* 15px */
+    font-size: 0.9375rem;
+    /* 15px */
     font-weight: 900;
     font-style: normal;
     font-family: 'TT Hoves Pro Bold', sans-serif;
 }
 
 .pricing-card-home p {
-    font-size: 0.875rem !important; /* 14px */
+    font-size: 0.875rem !important;
+    /* 14px */
 }
 
 .pricing-button {
     display: flex;
     justify-content: center;
-    margin-top: 1.875rem; /* 30px */
+    margin-top: 1.875rem;
+    /* 30px */
 }
 
 /* ---------------- VIDEO SECTION ---------------- */
 .video-container {
     display: flex;
-    margin-top: 12.5rem; /* 200px */
+    margin-top: 12.5rem;
+    /* 200px */
     justify-content: space-around;
     align-items: center;
 }
@@ -836,28 +942,34 @@ h2 {
 }
 
 .vid-text h2 {
-    font-size: 3.125rem; /* 50px */
+    font-size: 3.125rem;
+    /* 50px */
     text-align: left;
 }
 
 .vid-text p {
-    border-radius: 0.4375rem; /* 7px */
+    border-radius: 0.4375rem;
+    /* 7px */
     background: #E1F7FC;
 }
 
 .video-frame {
     width: 100%;
-    max-width: 31.25rem; /* 500px */
-    border-radius: 1.25rem; /* 20px */
+    max-width: 31.25rem;
+    /* 500px */
+    border-radius: 1.25rem;
+    /* 20px */
     overflow: hidden;
     box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.15);
-    border: 0.25rem solid #f1f1f1; /* 4px */
+    border: 0.25rem solid #f1f1f1;
+    /* 4px */
 }
 
 .video {
     width: 100%;
     display: block;
-    border-radius: 1.25rem; /* 20px */
+    border-radius: 1.25rem;
+    /* 20px */
     cursor: pointer;
     transition: transform 0.3s ease;
 }
@@ -870,12 +982,16 @@ h2 {
 .testimonials {
     background-color: #E1F7FC;
     width: 80%;
-    border-radius: 1.875rem; /* 30px */
+    border-radius: 1.875rem;
+    /* 30px */
     margin: auto;
     flex-direction: column;
-    margin-top: 9.375rem; /* 150px */
-    padding: 3.75rem 0; /* 60px */
-    margin-bottom: 12.5rem; /* 200px */
+    margin-top: 9.375rem;
+    /* 150px */
+    padding: 3.75rem 0;
+    /* 60px */
+    margin-bottom: 12.5rem;
+    /* 200px */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -884,27 +1000,34 @@ h2 {
 .proof {
     background-color: white;
     color: black;
-    padding: 1.25rem 2.1875rem; /* 20px 35px */
+    padding: 1.25rem 2.1875rem;
+    /* 20px 35px */
     width: 50%;
     text-align: center;
     font-weight: 900;
-    border-radius: 1.25rem; /* 20px */
-    font-size: 1.5rem; /* 24px */
-    line-height: 1.875rem; /* 30px */
+    border-radius: 1.25rem;
+    /* 20px */
+    font-size: 1.5rem;
+    /* 24px */
+    line-height: 1.875rem;
+    /* 30px */
     font-family: 'bricolage grotesque', sans-serif;
 }
 
 #ops {
     color: #07C0EA;
     font-family: "TT Hoves Pro Trial";
-    font-size: 1rem; /* 16px */
+    font-size: 1rem;
+    /* 16px */
 }
 
 .test-arrow {
     background-color: white;
     border-radius: 50%;
-    width: 2.5rem; /* 40px */
-    height: 2.5rem; /* 40px */
+    width: 2.5rem;
+    /* 40px */
+    height: 2.5rem;
+    /* 40px */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -912,27 +1035,35 @@ h2 {
 
 /* ---------------- FAQ SECTION ---------------- */
 .faq {
-    max-width: 37.5rem; /* 600px */
-    margin: 2.5rem auto; /* 40px */
+    max-width: 37.5rem;
+    /* 600px */
+    margin: 2.5rem auto;
+    /* 40px */
     font-family: Arial, sans-serif;
 }
 
 .faq h1 {
-    font-size: 2rem; /* 32px */
+    font-size: 2rem;
+    /* 32px */
     font-weight: bold;
-    margin-bottom: 1.5rem; /* 24px */
+    margin-bottom: 1.5rem;
+    /* 24px */
 }
 
 .faq-item {
-    border: 0.0625rem solid #ddd; /* 1px */
-    border-radius: 0.5rem; /* 8px */
-    margin-bottom: 0.75rem; /* 12px */
+    border: 0.0625rem solid #ddd;
+    /* 1px */
+    border-radius: 0.5rem;
+    /* 8px */
+    margin-bottom: 0.75rem;
+    /* 12px */
     overflow: hidden;
     transition: all 0.3s ease;
 }
 
 .faq-question {
-    padding: 1rem 1.25rem; /* 16px 20px */
+    padding: 1rem 1.25rem;
+    /* 16px 20px */
     cursor: pointer;
     font-weight: 600;
     display: flex;
@@ -945,7 +1076,8 @@ h2 {
 
 /* ---------- FAQ ---------- */
 .faq-answer {
-    padding: 0 1.25rem; /* 20px */
+    padding: 0 1.25rem;
+    /* 20px */
     max-height: 0;
     overflow: hidden;
     transition: all 0.3s ease;
@@ -953,12 +1085,15 @@ h2 {
 }
 
 .faq-answer.open {
-    padding: 1rem 1.25rem; /* 16px 20px */
-    max-height: 12.5rem; /* 200px */
+    padding: 1rem 1.25rem;
+    /* 16px 20px */
+    max-height: 12.5rem;
+    /* 200px */
 }
 
 .faq-icon {
-    font-size: 1.5rem; /* 24px */
+    font-size: 1.5rem;
+    /* 24px */
     line-height: 1;
 }
 
@@ -970,10 +1105,12 @@ h2 {
 
 .curve-text h1 {
     font-family: "Bricolage Grotesque", sans-serif;
-    font-size: 3rem; /* 48px */
+    font-size: 3rem;
+    /* 48px */
     font-weight: 700;
     line-height: 120%;
-    letter-spacing: -0.125rem; /* -2px */
+    letter-spacing: -0.125rem;
+    /* -2px */
 }
 
 .curve-text p a {
@@ -991,18 +1128,21 @@ h2 {
 .buttons {
     display: flex;
     justify-content: center;
-    gap: 0.625rem; /* 10px */
+    gap: 0.625rem;
+    /* 10px */
 }
 
 #transparent_btn {
     background: transparent;
-    border: 0.125rem solid white; /* 2px */
+    border: 0.125rem solid white;
+    /* 2px */
     color: white;
 }
 
 .email a {
     color: white;
-    font-size: 1.0625rem; /* 17px */
+    font-size: 1.0625rem;
+    /* 17px */
 }
 
 /* ---------- BADGES ---------- */
@@ -1011,8 +1151,10 @@ h2 {
     align-items: center;
     justify-content: center;
     font-family: 'TT Hoves Pro', sans-serif;
-    padding: 0.5625rem 1.875rem; /* 9px 30px */
-    border-radius: 2.1875rem; /* 35px */
+    padding: 0.5625rem 1.875rem;
+    /* 9px 30px */
+    border-radius: 2.1875rem;
+    /* 35px */
     text-align: center;
     width: max-content;
     margin: auto;
@@ -1042,17 +1184,24 @@ h2 {
     background-color: rgba(245, 212, 60, 0.30);
     color: #F5D43C;
 }
-.company_logos{
+
+.company_logos {
     display: flex;
     gap: 1rem;
     flex-direction: column;
 }
+.company_logos img {
+    width: fit-content;
+    height: fit-content;
+}
+
 /* ---------- KEYFRAMES ---------- */
 @keyframes fadeIn {
     from {
         opacity: 0;
         z-index: -1;
     }
+
     to {
         opacity: 1;
         z-index: -1;
@@ -1060,20 +1209,25 @@ h2 {
 }
 
 /* ---------- MEDIA QUERIES ---------- */
-@media (max-width: 55.625rem) { /* 890px */
+@media (max-width: 55.625rem) {
+
+    /* 890px */
     .hero-section {
         flex-direction: column;
         text-align: center;
         height: auto;
         width: 100%;
-        margin-top: 7.5rem; /* 120px */
-        padding: 1.25rem; /* 20px */
+        margin-top: 7.5rem;
+        /* 120px */
+        padding: 1.25rem;
+        /* 20px */
     }
 
     .left-hero-section,
     .right-hero-section {
         width: 100%;
-        padding: 0.625rem; /* 10px */
+        padding: 0.625rem;
+        /* 10px */
         align-items: center;
         text-align: center;
     }
@@ -1088,23 +1242,84 @@ h2 {
 
     .hero-text p {
         text-align: center;
-        font-size: 1rem; /* 16px */
+        font-size: 1rem;
+        /* 16px */
     }
 
     .hero-buttons {
         flex-direction: column;
     }
 
+    .services {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        ;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service {
+        width: 100%;
+    }
+
     .service-section {
         flex-direction: column;
-        padding: 1.25rem; /* 20px */
+        flex-direction: column-reverse;
+        padding: 1.25rem;
+        /* 20px */
+    }
+
+    .service-gif {
+        width: 100%;
+    }
+
+    .service-section {
+        flex-direction: column;
+        padding: 1.25rem;
+    }
+
+    .services {
+        width: 100%;
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 1rem;
+        scroll-behavior: smooth;
+    }
+
+    .service {
+        flex: 0 0 90%;
+        scroll-snap-align: start;
+        margin-bottom: 0;
+        /* remove large bottom margin */
+        border-radius: 0.75rem;
+        box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
+    }
+
+    .service-gif {
+        width: 100%;
+        height: auto;
+        margin-top: 1.5rem;
+    }
+
+    /* Optional: hide scrollbar for a cleaner look */
+    .services::-webkit-scrollbar {
+        display: none;
+    }
+
+    .services {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
 
     .cards {
         flex-wrap: wrap;
     }
 
-    h1, h2 {
+    h1,
+    h2 {
         text-align: center;
     }
 
@@ -1113,19 +1328,25 @@ h2 {
     }
 
     .switch h1 {
-        font-size: 2.6875rem; /* 43px */
-        padding: 0 1.25rem; /* 20px */
+        font-size: 2.6875rem;
+        /* 43px */
+        padding: 0 1.25rem;
+        /* 20px */
     }
 
     .switch p {
-        font-size: 1rem; /* 16px */
-        padding: 0 1.875rem; /* 30px */
+        font-size: 1rem;
+        /* 16px */
+        padding: 0 1.875rem;
+        /* 30px */
     }
 
     .joble h2 {
-        font-size: 2.6875rem; /* 43px */
+        font-size: 2.6875rem;
+        /* 43px */
         font-family: 'Bricolage Grotesque', sans-serif;
-        letter-spacing: -0.125rem; /* -2px */
+        letter-spacing: -0.125rem;
+        /* -2px */
     }
 
     .landing h3 {
@@ -1133,17 +1354,21 @@ h2 {
     }
 
     .results h1 {
-        font-size: 2.6875rem; /* 43px */
-        padding: 0 1.25rem; /* 20px */
+        font-size: 2.6875rem;
+        /* 43px */
+        padding: 0 1.25rem;
+        /* 20px */
     }
 
     .result-cards .result-card {
         max-height: fit-content;
-        padding: 1.25rem; /* 20px */
+        padding: 1.25rem;
+        /* 20px */
     }
 
     .results .mileage {
-        font-size: 0.875rem; /* 14px */
+        font-size: 0.875rem;
+        /* 14px */
         text-align: center;
     }
 
@@ -1152,7 +1377,8 @@ h2 {
     }
 
     .step {
-        padding: 0.625rem; /* 10px */
+        padding: 0.625rem;
+        /* 10px */
         max-width: 70%;
     }
 
@@ -1162,7 +1388,8 @@ h2 {
     }
 
     .roi h1 {
-        font-size: 2.6875rem; /* 43px */
+        font-size: 2.6875rem;
+        /* 43px */
     }
 
     .roi_math {
@@ -1170,11 +1397,13 @@ h2 {
     }
 
     .example {
-        margin-top: 1.25rem; /* 20px */
+        margin-top: 1.25rem;
+        /* 20px */
     }
 
     .compliance h1 {
-        font-size: 2.6875rem; /* 43px */
+        font-size: 2.6875rem;
+        /* 43px */
     }
 
     .features-section {
@@ -1202,7 +1431,8 @@ h2 {
     }
 
     .pricing-card p {
-        font-size: 0.875rem; /* 14px */
+        font-size: 0.875rem;
+        /* 14px */
     }
 
     .video-container {
@@ -1214,14 +1444,17 @@ h2 {
     }
 
     .vid-text h2 {
-        font-size: 2.1875rem; /* 35px */
+        font-size: 2.1875rem;
+        /* 35px */
         text-align: center;
     }
 
     .vid-text p {
-        font-size: 0.75rem; /* 12px */
+        font-size: 0.75rem;
+        /* 12px */
         font-family: 'TT Hoves Pro', sans-serif;
-        padding: 0.625rem 0.9375rem; /* 10px 15px */
+        padding: 0.625rem 0.9375rem;
+        /* 10px 15px */
     }
 
     .video-container {
@@ -1229,7 +1462,8 @@ h2 {
     }
 
     .vid-button {
-        margin: 1.875rem auto; /* 30px */
+        margin: 1.875rem auto;
+        /* 30px */
     }
 
     .video-container .type_button {
@@ -1247,18 +1481,22 @@ h2 {
     }
 
     .testimonials h1 {
-        font-size: 1.875rem; /* 30px */
+        font-size: 1.875rem;
+        /* 30px */
     }
 
     .proof {
         width: 90%;
-        font-size: 0.75rem; /* 12px */
-        line-height: 1.25rem; /* 20px */
+        font-size: 0.75rem;
+        /* 12px */
+        line-height: 1.25rem;
+        /* 20px */
         font-weight: 500;
     }
 
     .faq {
-        padding: 0 1.25rem; /* 20px */
+        padding: 0 1.25rem;
+        /* 20px */
     }
 
     .curve .desktop {
@@ -1266,8 +1504,10 @@ h2 {
     }
 
     .curve-text h1 {
-        line-height: 2.1875rem; /* 35px */
-        font-size: 2rem; /* 32px */
+        line-height: 2.1875rem;
+        /* 35px */
+        font-size: 2rem;
+        /* 32px */
     }
 
     .curve-text .buttons {
@@ -1305,16 +1545,22 @@ h2 {
 /* HAHAHAHAHAHA  */
 
 .eclipsed-bg {
-  position: absolute;
-  top: 0; /* just under navbar */
-  left: 0;
-  width: 100%;
-  height: 400px; /* adjust the height as needed */
-  background: radial-gradient(
-    ellipse 80% 60% at 50% 0%, /* width, height, position */
-    #E9FBFF 0%,                /* bright blue center */
-    #C4E9F8 30%,               /* soft transition */
-    #ffffff 70%                /* fade into white */
-  );
-  z-index: -1; /* ensure it sits behind content */
+    position: absolute;
+    top: 0;
+    /* just under navbar */
+    left: 0;
+    width: 100%;
+    height: 400px;
+    /* adjust the height as needed */
+    background: radial-gradient(ellipse 80% 60% at 50% 0%,
+            /* width, height, position */
+            #E9FBFF 0%,
+            /* bright blue center */
+            #C4E9F8 30%,
+            /* soft transition */
+            #ffffff 70%
+            /* fade into white */
+        );
+    z-index: -1;
+    /* ensure it sits behind content */
 }
