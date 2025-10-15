@@ -10,7 +10,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+  color-scheme: light;
   color: #111827;
   background-color: #fff;
 
@@ -19,12 +19,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     color: #f9fafb;
     background-color: #111827;
   }
-}
+} */
 @font-face {
   font-family: 'TT Hoves Pro';
   src: url(./assets/fonts/tt_hoves_pro/TT\ Hoves\ Pro\ Trial\ Regular.ttf) format('truetype');

@@ -256,7 +256,14 @@
     background: transparent;
     color: var(--primary-color);
 }
-
+.compare-badge {
+    margin-top: 8rem;
+    color: #9A05EB;
+    background-color: rgba(154, 5, 235, 0.09);
+}
+h2.fact {
+    font-size: 50px;
+}
 .curved-grey-card {
     border-radius: 16px;
     background:  #F9FAFB;
@@ -264,7 +271,34 @@
     border: 1px solid grey;
     width: 50%;
     margin: auto;
-    padding: 1.5rem;
+    padding:0.5rem;
+    text-align: left;
+    font-family: 'TT Hoves Pro', sans-serif;
+}
+.curved-grey-card p {
+    margin-top: 0.3rem;
+    font-size: 14px;
+    color: #66707F
+}
+.curved-grey-card p.spoiler {
+    font-size: 12px;
+    color: #07C0EA;
+    margin-top: 0.2em;
+    font-style: italic IM !important;
+}
+.calc {
+    margin-top: 5rem;
+}
+.career-badge {
+    color: #005EB3;
+    margin-top: 8rem;
+    background-color: #E6EDFF;
+}
+h2.clock {
+    font-size: 50px;;
+}
+.apply {
+    margin-top: 3rem;
 }
 @media screen and (max-width: 890px) {
     .curved-grey-card {

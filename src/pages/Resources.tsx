@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import "../styles/resources.css";
 import MainLayout from "../layout/MainLayout";
+import arrow from "../assets/arrow-right.svg";
 
 // ✅ import your resource images
 import resource_pic from "../assets/resources-blog.png";
@@ -96,12 +97,12 @@ const Resources = () => {
                     See all
                 </button>
 
-                <div className="badge compare">
+                <div className="badge compare-badge">
                     Compare Joble
                 </div>
                 <h2 className="fact">
-                    Number Don't Lie; <br />
-                    Screenshot Don't Either
+                    Numbers Don't Lie; <br />
+                    Screenshots Don't Either
                 </h2>
                 <div className="curved-grey-card score-card">
                     <p>Side-by-side scorecards vs. Microsoft 365, Google Workspace, Slack + Zoom stacks. Transparent pricing calculators and live feature checklists</p>
@@ -109,9 +110,34 @@ const Resources = () => {
                 </div>
 
                 <div className="calc">
-                    
-                </div>
+                    <button className="type_button price-hero" id='cal_home_btn'>
 
+                        Run the cost calculator{" "}
+                        <span className="arrow">
+                            <img src={arrow} alt="" />
+                        </span>
+                    </button>
+                </div>
+                <div className="badge career-badge">
+                    Careers
+                </div>
+                <h2 className="clock">Stop Clock punching; Start
+                    Building the Post-cloud Future
+                </h2>
+                <div className="curved-grey-card score-card">
+                    <p>Remote-first, Africa-and-Europe team, 40 % women in tech roles, equity on day one.
+                        Open seats in Go/Rust back-end, React front-end, ML, DevRel, customer success</p>
+                    <p className="spoiler">Perk we’re proud of—“Own Your Friday”: no meetings, just create.</p>
+                </div>
+                 <div className="apply">
+                    <button className="type_button price-hero" id='cal_home_btn'>
+
+                        Click to apply{" "}
+                        <span className="arrow">
+                            <img src={arrow} alt="" />
+                        </span>
+                    </button>
+                </div>
             </div>
         </MainLayout>
     );
