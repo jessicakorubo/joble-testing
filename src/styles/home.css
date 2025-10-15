@@ -2,15 +2,15 @@ body {
     /* width: 100vw; */
 }
 
+/* ---------------- HERO SECTION ---------------- */
 .hero-section {
     display: flex;
     align-items: center;
-    /* Adjust height considering navbar height */
     box-sizing: border-box;
-    margin-top: 250px;
-    /* Space for fixed navbar */
+    margin-top: 15rem; /* 250px */
 }
 
+/* Hero text */
 .hero-text h1 {
     text-align: left;
 }
@@ -18,41 +18,46 @@ body {
 .hero-text p {
     text-align: left;
     font-family: 'TT Hoves Pro', sans-serif;
-    font-size: 25px;
-    margin-top: 20px;
+    font-size: 1.6rem; /* 25px */
+    margin-top: 1.25rem; /* 20px */
 }
+
+/* Outbound badge */
 .outbound-section {
     display: flex;
-    border: 2px solid var(--primary-color);
+    border: 0.125rem solid var(--primary-color);
     width: fit-content;
     padding: 0.3rem 0.7rem;
     gap: 1rem;
-    border-radius: 25px;
+    border-radius: 1.6rem;
 }
+
 .outbound-design {
     display: flex;
-    gap: 2.5px;
+    gap: 0.15rem;
 }
+
 .outbound-design .bound-text {
     color: var(--primary-color);
     font-family: 'TT Hoves Pro', sans-serif;
 }
+
+/* Left and right hero sections */
 .left-hero-section {
     flex: 1;
-    padding: 20px;
-    padding-left: 30px;
+    padding: 1.25rem;
+    padding-left: 2rem;
     width: 55%;
     text-align: left;
 }
 
 .dynamic-tag {
     color: var(--primary-color);
-    /* Primary color */
 }
 
 .right-hero-section {
     flex: 1;
-    padding: 20px;
+    padding: 1.25rem;
     width: 45%;
     display: flex;
     justify-content: center;
@@ -61,46 +66,42 @@ body {
 
 .right-hero-section img {
     width: 100%;
-    max-width: 500px;
-    /* Adjust as needed */
+    max-width: 31rem; /* 500px */
     height: auto;
 }
 
 .left-hero-section .outbound-line img {
     width: 100%;
-    max-width: 600px;
-    /* Adjust as needed */
+    max-width: 37.5rem; /* 600px */
     height: auto;
 }
 
+/* Hero buttons */
 .hero-buttons {
-    margin-top: 20px;
+    margin-top: 1.25rem;
     display: flex;
     gap: 2rem;
     justify-content: flex-start;
     align-items: left;
 }
 
+/* White button */
 .white_bg_button {
-    /* margin-top: 40px; */
     display: inline-flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    /* center contents horizontally (optional) */
-    gap: 8px;
-    /* space between text and icon */
-    padding: 15px 30px;
+    gap: 0.5rem;
+    padding: 1rem 1.8rem;
     color: var(--primary-color);
     cursor: pointer;
-    border-radius: 45px;
+    border-radius: 2.8rem;
     background-color: #fff;
-    border: 1px solid var(--primary-color);
-
+    border: 0.063rem solid var(--primary-color);
 }
 
 .white_bg_button:hover {
-    box-shadow: 10px 4px 12px var(--primary-color);
+    box-shadow: 0.625rem 0.25rem 0.75rem var(--primary-color);
     transition: 0.5s box-shadow;
 }
 
@@ -109,61 +110,63 @@ body {
     border-radius: 50%;
 }
 
+/* Companies slider */
 .companies_slider {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 3rem;
 }
 
+/* Switch section */
 .switch {
     text-align: center;
-    margin-top: 110px;
+    margin-top: 7rem;
 }
 
 .switch h1 {
-    font-size: 50px;
+    font-size: 3.2rem; /* 50px */
 }
 
 .switch p {
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px */
     color: #333;
     font-family: 'TT Hoves Pro', sans-serif;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
+/* Joble Highlight */
 .joble-highlight {
     color: var(--primary-color);
-    /* Primary color */
 }
 
+/* Cards */
 .cards {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 1.25rem;
     align-items: center;
-    margin: 50px 0;
+    margin: 3rem 0;
 }
 
 .card {
     background-color: #E1F7FC;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    padding: 1.25rem;
     text-align: center;
-    width: 230px;
+    width: 14.375rem; /* 230px */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 250px;
+    height: 15.625rem; /* 250px */
 }
 
 .card h3 {
     font-family: 'TT Hoves Pro', sans-serif;
     color: #002D56;
     text-transform: capitalize;
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px */
     line-height: 120%;
-    font-style: normal;
     font-weight: 500;
 }
 
@@ -171,47 +174,48 @@ body {
     color: #002D56;
     text-align: center;
     font-family: "TT Hoves Pro Demi", sans-serif;
-    font-size: 20px;
-    font-style: normal;
+    font-size: 1.25rem; /* 20px */
     font-weight: 900;
-    font-weight: bold;
-    ;
     line-height: 120%;
     text-transform: capitalize;
 }
+
+/* Background ellipse container */
 .background-ellipse {
    position: relative;
-     overflow: visible;
+   overflow: visible;
 }
+
+/* Joble section */
 .joble {
     text-align: center;
-    
-    margin-top: 100px;
-  
+    margin-top: 6.25rem; /* 100px */
 }
 
 .joble h2 {
-    font-size: 50px;
+    font-size: 3.2rem; /* 50px */
 }
+
+/* Service layout */
 .services {
     width: 40%;
 }
+
 .service {
     background: #fff;
-    border-radius: 12px;
-    padding: 20px;
+    border-radius: 0.75rem;
+    padding: 1.25rem;
     transition: all 0.3s ease;
     cursor: pointer;
     z-index: -1;
     flex: 1;
     text-align: left;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem; /* 50px */
 }
 
 .service:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transform: translateY(-0.375rem);
+    box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.15);
     z-index: -1;
 }
 
@@ -219,20 +223,23 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 50px 0;
-    gap: 30px;
-    padding: 30px 6rem;
+    margin: 3rem 0;
+    gap: 2rem;
+    padding: 2rem 8rem;
     padding-right: 0;
 }
 
 p.outcome {
     opacity: 0.7;
 }
+
+/* Service GIF */
 .service-gif {
     width: 60%;
-    height: 550px;
+    height: 34.4rem; /* 550px */
     position: relative;
 }
+
 .service-pics {
     width: 100%;
     height: 100%;
@@ -241,134 +248,128 @@ p.outcome {
 
 .service h3 {
     font-weight: 900;
-    font-size: 24px;
+    font-size: 1.5rem; /* 24px */
     font-family: 'TT Hoves Pro Bold', sans-serif;
 }
 
+/* Joble GIF positioning */
 .joble-gif-top {
     position: absolute;
-    top:-5rem;
+    top: -5rem;
     left: 20%;
     width: fit-content;
     z-index: -1;
     height: fit-content;
 }
- .joble-gif-bottom{
+
+.joble-gif-bottom {
     position: absolute;
-    bottom:-5rem;
+    bottom: -5rem;
     left: 20%;
     width: fit-content;
     z-index: -1;
     height: fit-content;
 }
- 
+
+/* HAHAHA */
+/* ---------------- SERVICE PICS ---------------- */
 .service-pics img {
     width: 100%;
     height: 100%;
-    /* max-width: 500px; */
-    /* Adjust as needed */
-    /* object-fit: cover; */
-    border-radius: 10px;
+    border-radius: 0.625rem; /* 10px */
     z-index: -1;
 }
 
 .service-pics .fade-image {
     width: 100%;
     height: 100%;
-    /* max-width: 500px; */
-    /* Adjust as needed */
-    border-radius: 12px;
+    border-radius: 0.625rem; /* 10px */
     object-fit: cover;
-    border-radius: 10px;
     animation: fadeIn 0.6s ease-in forwards;
 }
 
-
+/* ---------------- LANDING SECTION ---------------- */
 .landing_section {
     position: relative;
 }
 
 .landing {
-    height: 380px;
+    height: 23.75rem; /* 380px */
     width: 100%;
-    /* padding-top: 50px; */
-    /* padding-bottom: 70px; */
-    /* box-sizing: border-box; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
     background-image: url('../assets/landing_bg.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .landing-frame {
     width: 100%;
     position: absolute;
     height: auto;
-    bottom: -10px;
+    bottom: -0.625rem; /* 10px */
 }
 
 .landing-frame img {
     width: 100%;
-
-
 }
 
 .landing h3 {
-    /* margin-top: 200px; */
     font-family: 'Bricolage Grotesque', sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     width: 40%;
-    font-size: 30px;
+    font-size: 1.875rem; /* 30px */
 }
 
+/* ---------------- RESULTS SECTION ---------------- */
 .results {
     display: flex;
-    margin-top: 100px;
+    margin-top: 6.25rem; /* 100px */
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .results h4 {
-    font-size: 20px;
-    line-height: 15px;
+    font-size: 1.25rem; /* 20px */
+    line-height: 0.9375rem; /* 15px */
 }
 
 .results .mileage {
     font-family: 'TT Hoves Pro', sans-serif;
-    font-size: 16px;
+    font-size: 1.25rem; /* 20px */
     color: #080808;
-    font-size: 20px;
     font-weight: 900;
-    line-height: 24px;
-    margin-top: 10px;
+    line-height: 1.5rem; /* 24px */
+    margin-top: 0.625rem; /* 10px */
 }
 
 .result-cards {
     display: flex;
-    padding: 20px 80px;
+    padding: 1.25rem 5rem; /* 20px 80px */
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    margin-top: 30px;
-    /* margin-bottom: 100px; */
+    margin-top: 1.875rem; /* 30px */
     flex-wrap: wrap;
 }
 
 .result-cards .result-card {
     text-align: left;
-    min-width: 262px;
+    min-width: 16.375rem; /* 262px */
     max-height: fit-content;
-    border-radius: 20px;
-    padding: 20px;
+    border-radius: 1.25rem; /* 20px */
+    padding: 1.25rem; /* 20px */
     background: #F7F7F7;
 }
 
+/* ---------------- HOW IT WORKS ---------------- */
 .howItWorks {
-    margin: 100px 0;
+    margin: 6.25rem 0; /* 100px 0 */
 }
 
 .steps {
@@ -376,13 +377,13 @@ p.outcome {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    margin-top: 50px;
+    margin-top: 3.125rem; /* 50px */
 }
 
 .step {
     text-align: left;
-    padding: 20px;
-    border-radius: 20px;
+    padding: 1.25rem; /* 20px */
+    border-radius: 1.25rem; /* 20px */
     border: 1px solid var(--Grey-500, #E4E4E4);
 }
 
@@ -390,6 +391,7 @@ p.outcome {
     color: var(--text-color);
 }
 
+/* ---------------- ROI MATH ---------------- */
 .roi_math {
     display: flex;
     font-family: 'TT Hoves Pro', sans-serif;
@@ -406,47 +408,48 @@ p.outcome {
 }
 
 .bolder {
-    /* font-weight:bolder; */
     font-style: normal;
 }
 
 .roi {
-    margin-bottom: 150px;
+    margin-bottom: 9.375rem; /* 150px */
 }
 
 .roi_border {
-    width: 300px;
-    border-radius: 15px;
+    width: 18.75rem; /* 300px */
+    border-radius: 0.9375rem; /* 15px */
     border: 1px solid var(--Grey-500, #E4E4E4);
     background: var(--Grey-100, #FAFAFA);
-
 }
 
 .break-even {
-    width: 300px;
+    width: 18.75rem; /* 300px */
 }
 
 .small {
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px */
     font-family: 'TT Hoves Pro', sans-serif;
 }
 
 .tt-bold {
     font-family: 'TT Hoves Pro Bold', sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px */
 }
 
 .extra p {
     width: 78%;
     text-align: center;
     margin: auto;
-    padding: 20px 10px;
+    padding: 1.25rem 0.625rem; /* 20px 10px */
 }
 
 .example {
-    width: 300px;
+    width: 18.75rem; /* 300px */
     font-weight: 500;
 }
+
+
+/* ???hahaha */
 
 h1,
 h2 {
@@ -454,82 +457,83 @@ h2 {
     text-align: center;
 }
 
+/* ---------------- BUTTONS ---------------- */
 .type_button {
-    /* margin-top: 25px; */
     display: inline-flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    /* center contents horizontally (optional) */
     gap: 0.7rem;
-    /* space between text and icon */
-    padding: 15px 30px;
+    padding: 0.9375rem 1.875rem; /* 15px 30px */
     color: #fff;
-    border-radius: 45px;
+    border-radius: 2.8125rem; /* 45px */
     background-color: #07C0EA;
     border: none;
     cursor: pointer;
 }
 
 .type_button:hover {
-    box-shadow: 10px 4px 12px #07C0EA;
+    box-shadow: 0.625rem 0.25rem 0.75rem #07C0EA; /* 10px 4px 12px */
     transition: 0.5s box-shadow;
 }
-#cal_home_btn, #cons_home_btn {
-    margin-top: 40px;
+
+#cal_home_btn,
+#cons_home_btn {
+    margin-top: 2.5rem; /* 40px */
 }
+
 #cal_home_btn {
-  position: relative;
-  overflow: hidden;
-  transition: all 0.6s ease; /* for width and subtle hover effects */
-  width: 280px; /* your default width */
+    position: relative;
+    overflow: hidden;
+    transition: all 0.6s ease;
+    width: 17.5rem; /* 280px */
 }
 
 #cal_home_btn .imgGroup {
-  transition: opacity 0.8s ease, transform 0.8s ease, filter 0.8s ease;
+    transition: opacity 0.8s ease, transform 0.8s ease, filter 0.8s ease;
 }
 
 #cal_home_btn:hover {
-  width: 250px; /* slightly smaller */
+    width: 15.625rem; /* 250px */
 }
 
 #cal_home_btn:hover .imgGroup {
-  opacity: 0;
-  transform: scale(1.3);
-  filter: blur(3px);
+    opacity: 0;
+    transform: scale(1.3);
+    filter: blur(3px);
 }
 
 #cal_home_btn::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle, rgba(0, 102, 255, 0.25) 0%, transparent 70%);
-  opacity: 0;
-  transform: scale(0.5);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-  z-index: 0;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle, rgba(0, 102, 255, 0.25) 0%, transparent 70%);
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    z-index: 0;
 }
 
 #cal_home_btn:hover::after {
-  opacity: 1;
-  transform: scale(1.5);
+    opacity: 1;
+    transform: scale(1.5);
 }
 
 #cal_home_btn span,
 #cal_home_btn img {
-  position: relative;
-  z-index: 1; /* ensures text and icons stay above ripple */
+    position: relative;
+    z-index: 1;
 }
 
 .type_button span.arrow img {
-    width: 18px;
+    width: 1.125rem; /* 18px */
+    height: 1.125rem; /* 18px */
     background-color: white;
-    height: 18px;
     border-radius: 50%;
     display: block;
-    /* prevents extra spacing under image */
 }
 
+/* ---------------- FEATURES SECTION ---------------- */
 .features-section {
     width: 60%;
     margin: auto;
@@ -538,20 +542,19 @@ h2 {
 .feature-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 300px 200px 300px;
-    /* = 500px total */
-    gap: 10px;
+    grid-template-rows: 18.75rem 12.5rem 18.75rem; /* 300px 200px 300px */
+    gap: 0.625rem; /* 10px */
     padding: 1rem;
-    border-radius: 8px;
+    border-radius: 0.5rem; /* 8px */
 }
 
-/* card styling */
+/* Card styling */
 .feature-grid {
     background-color: #FFFFFF;
-    border-radius: 16px;
-    padding: 20px;
+    border-radius: 1rem; /* 16px */
+    padding: 1.25rem; /* 20px */
     text-align: center;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.03); /* 0 4px 20px */
     border: 1px solid #e5e7eb;
     display: flex;
     flex-direction: column;
@@ -562,60 +565,50 @@ h2 {
 .feature-grid h3 {
     color: #333;
     font-family: 'TT Hoves Pro', sans-serif;
-    font-size: 25px;
+    font-size: 1.5625rem; /* 25px */
 }
 
 .feature-icon {
     background-color: #B9FFD4;
-    padding: 10px;
-    border-radius: 13.757px;
+    padding: 0.625rem; /* 10px */
+    border-radius: 0.86rem; /* 13.757px */
 }
 
 .feature-items div {
-    padding: 10px 15px;
+    padding: 0.625rem 1.25rem; /* 10px 20px */
     background-color: #F8F8F8;
-    border-radius: 5px;
-    padding: 5px 20px;
-    margin-top: 10px;
+    border-radius: 0.3125rem; /* 5px */
+    margin-top: 0.625rem; /* 10px */
 }
 
-/* explicit placement to create the mosaic */
+/* Explicit placement for mosaic layout */
 .grid-1 {
-    /* top-left: 300px */
     grid-column: 1 / 2;
     grid-row: 1 / 3;
-    /* spans row1 + row2 (200 + 100 = 300) */
 }
 
 .grid-2 {
-    /* top-right: 200px */
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    /* row1 (200) */
 }
 
 .grid-3 {
-    /* bottom-left: 200px */
     grid-column: 1 / 2;
     grid-row: 3 / 4;
-    /* row3 (200) */
 }
 
 .grid-4 {
-    /* bottom-right: 300px */
     grid-column: 2 / 3;
     grid-row: 2 / 4;
-    /* spans row2 + row3 (100 + 200 = 300) */
 }
 
-/* responsive: stack on small screens */
-@media (max-width: 800px) {
+/* Responsive stacking */
+@media (max-width: 50rem) { /* 800px */
     .feature-card {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
     }
 
-    /* reset explicit placement so items flow vertically */
     .grid-1,
     .grid-2,
     .grid-3,
@@ -625,25 +618,24 @@ h2 {
     }
 }
 
+/* ---------------- STACKS SECTION ---------------- */
 .stack-section {
-    margin-top: 150px;
-
+    margin-top: 9.375rem; /* 150px */
 }
 
 .stacks {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
-
 }
 
 .stack {
-    border-radius: 24px;
-    min-height: 250px;
-    max-width: 300px;
-    width: 250px;
+    border-radius: 1.5rem; /* 24px */
+    min-height: 15.625rem; /* 250px */
+    max-width: 18.75rem; /* 300px */
+    width: 15.625rem; /* 250px */
     border: 1px solid #E4E4E4;
-    padding: 25px;
+    padding: 1.5625rem; /* 25px */
     background: #FAFAFA;
 }
 
@@ -652,16 +644,16 @@ h2 {
     justify-content: space-between;
 }
 
+/* ---------------- FEATURE SELECTION ---------------- */
 .feature-selection::before {
     content: "";
     position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 16px;
-    height: 16px;
+    width: 1rem; /* 16px */
+    height: 1rem; /* 16px */
     background-image: url('../assets/checkIcon.png');
-    /* your custom icon */
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -671,30 +663,29 @@ h2 {
     background-color: #f9fafb;
     color: #374151;
     font-size: 0.9rem;
-    padding: 8px 10px 8px 34px;
-    /* extra left padding for icon space */
-    border-radius: 8px;
+    padding: 0.5rem 0.625rem 0.5rem 2.125rem; /* 8px 10px 8px 34px */
+    border-radius: 0.5rem; /* 8px */
 }
 
+/* ---------------- VALUE GAIN ---------------- */
 .value-gain {
     width: 100%;
-    /* height: 300px; */
     display: flex;
     justify-content: center;
     align-items: center;
     background: #FAFAFA;
-    margin-top: 100px;
-    padding-top: 150px;
+    margin-top: 6.25rem; /* 100px */
+    padding-top: 9.375rem; /* 150px */
 }
+
+
+/* HAHAHAHHHHHAHAHAA */
 
 .long-arrow {
     position: relative;
-    width: 300px;
-    /* length of the arrow */
-    height: 2px;
-    /* thickness of the line */
+    width: 18.75rem; /* 300px */
+    height: 0.125rem; /* 2px */
     background-color: #00b4d8;
-    /* blue color like your example */
 }
 
 /* create arrowhead */
@@ -704,15 +695,16 @@ h2 {
     right: 0;
     top: 50%;
     transform: translateY(-50%) rotate(45deg);
-    width: 8px;
-    height: 8px;
-    border-top: 2px solid #00b4d8;
-    border-right: 2px solid #00b4d8;
+    width: 0.5rem; /* 8px */
+    height: 0.5rem; /* 8px */
+    border-top: 0.125rem solid #00b4d8; /* 2px */
+    border-right: 0.125rem solid #00b4d8;
 }
 
+/* ---------------- GAIN SECTION ---------------- */
 .gain-section {
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 9.375rem; /* 150px */
+    margin-bottom: 9.375rem; /* 150px */
     position: relative;
     background-color: #FAFAFA;
 }
@@ -720,7 +712,7 @@ h2 {
 .gain-container {
     display: flex;
     justify-content: center;
-    gap: 35px;
+    gap: 2.1875rem; /* 35px */
     align-items: center;
     width: 80%;
     margin: auto;
@@ -729,7 +721,7 @@ h2 {
 .gain-list {
     width: 65%;
     font-family: 'Bricolage Grotesque', sans-serif;
-    font-size: 40px;
+    font-size: 2.5rem; /* 40px */
     font-weight: 500;
     text-align: left;
     font-style: normal;
@@ -741,10 +733,10 @@ h2 {
 
 .gain-joble {
     position: absolute;
-    top: -30px;
+    top: -1.875rem; /* -30px */
     left: 75%;
     transform: translateX(-50%);
-    width: 150px;
+    width: 9.375rem; /* 150px */
     height: 1;
     z-index: 100;
 }
@@ -753,30 +745,30 @@ h2 {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border: 8px solid white;
+    border: 0.5rem solid white; /* 8px */
 }
 
 .gains ul {
     font-weight: 500;
     display: flex;
     font-family: 'TT Hoves Pro', sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px */
     color: white;
     flex-direction: column;
     justify-content: flex-start;
 }
 
 .gain-border {
-    padding: 5px;
-    border: 2px dashed var(--primary-color);
-    border-radius: 38px;
+    padding: 0.3125rem; /* 5px */
+    border: 0.125rem dashed var(--primary-color); /* 2px */
+    border-radius: 2.375rem; /* 38px */
 }
 
 .gain-bg {
     background: #07C0EA;
     height: max-content;
-    padding: 30px;
-    border-radius: 38px
+    padding: 1.875rem; /* 30px */
+    border-radius: 2.375rem; /* 38px */
 }
 
 .gain-button {
@@ -787,6 +779,7 @@ h2 {
     width: 100%;
 }
 
+/* ---------------- PRICING SECTION ---------------- */
 .pricing {
     display: flex;
     gap: 1rem;
@@ -794,45 +787,46 @@ h2 {
 }
 
 .pricing-card-home {
-    border-radius: 17.907px;
-    width: 250px;
+    border-radius: 1.12rem; /* 17.907px */
+    width: 15.625rem; /* 250px */
     min-height: fit-content;
     font-family: 'TT Hoves Pro', sans-serif;
     background: #FFF;
-    padding: 25px;
-    box-shadow: -8.42px 9.68px 86.3px -11.29px rgba(0, 0, 0, 0.10);
+    padding: 1.5625rem; /* 25px */
+    box-shadow: -0.526rem 0.605rem 5.39rem -0.705rem rgba(0, 0, 0, 0.10);
 }
 
 .pricing-card-home .icon {
     background: #FAFAFA;
-    padding: 15px;
-    border-radius: 13.757px;
+    padding: 0.9375rem; /* 15px */
+    border-radius: 0.86rem; /* 13.757px */
 }
 
 #platform {
-    line-height: 5px;
+    line-height: 0.3125rem; /* 5px */
 }
 
 .pricing-card-home h3 {
-    font-size: 15px;
+    font-size: 0.9375rem; /* 15px */
     font-weight: 900;
     font-style: normal;
     font-family: 'TT Hoves Pro Bold', sans-serif;
 }
 
 .pricing-card-home p {
-    font-size: 14px !important;
+    font-size: 0.875rem !important; /* 14px */
 }
 
 .pricing-button {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 1.875rem; /* 30px */
 }
 
+/* ---------------- VIDEO SECTION ---------------- */
 .video-container {
     display: flex;
-    margin-top: 200px;
+    margin-top: 12.5rem; /* 200px */
     justify-content: space-around;
     align-items: center;
 }
@@ -842,29 +836,28 @@ h2 {
 }
 
 .vid-text h2 {
-    font-size: 50px;
+    font-size: 3.125rem; /* 50px */
     text-align: left;
 }
 
 .vid-text p {
-    border-radius: 7px;
+    border-radius: 0.4375rem; /* 7px */
     background: #E1F7FC;
 }
 
 .video-frame {
     width: 100%;
-    max-width: 500px;
-    border-radius: 20px;
+    max-width: 31.25rem; /* 500px */
+    border-radius: 1.25rem; /* 20px */
     overflow: hidden;
-    /* ensures video corners are rounded */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    border: 4px solid #f1f1f1;
+    box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.15);
+    border: 0.25rem solid #f1f1f1; /* 4px */
 }
 
 .video {
     width: 100%;
     display: block;
-    border-radius: 20px;
+    border-radius: 1.25rem; /* 20px */
     cursor: pointer;
     transition: transform 0.3s ease;
 }
@@ -873,15 +866,16 @@ h2 {
     transform: scale(1.02);
 }
 
+/* ---------------- TESTIMONIALS ---------------- */
 .testimonials {
     background-color: #E1F7FC;
     width: 80%;
-    border-radius: 30px;
+    border-radius: 1.875rem; /* 30px */
     margin: auto;
     flex-direction: column;
-    margin-top: 150px;
-    padding: 60px 0;
-    margin-bottom: 200px;
+    margin-top: 9.375rem; /* 150px */
+    padding: 3.75rem 0; /* 60px */
+    margin-bottom: 12.5rem; /* 200px */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -890,55 +884,55 @@ h2 {
 .proof {
     background-color: white;
     color: black;
-    padding: 20px 35px;
+    padding: 1.25rem 2.1875rem; /* 20px 35px */
     width: 50%;
     text-align: center;
     font-weight: 900;
-    border-radius: 20px;
-    font-size: 24px;
-    line-height: 30px;
+    border-radius: 1.25rem; /* 20px */
+    font-size: 1.5rem; /* 24px */
+    line-height: 1.875rem; /* 30px */
     font-family: 'bricolage grotesque', sans-serif;
 }
 
 #ops {
     color: #07C0EA;
     font-family: "TT Hoves Pro Trial";
-    font-size: 16px;
+    font-size: 1rem; /* 16px */
 }
 
 .test-arrow {
     background-color: white;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem; /* 40px */
+    height: 2.5rem; /* 40px */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* FAQ */
+/* ---------------- FAQ SECTION ---------------- */
 .faq {
-    max-width: 600px;
-    margin: 40px auto;
+    max-width: 37.5rem; /* 600px */
+    margin: 2.5rem auto; /* 40px */
     font-family: Arial, sans-serif;
 }
 
 .faq h1 {
-    font-size: 32px;
+    font-size: 2rem; /* 32px */
     font-weight: bold;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem; /* 24px */
 }
 
 .faq-item {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin-bottom: 12px;
+    border: 0.0625rem solid #ddd; /* 1px */
+    border-radius: 0.5rem; /* 8px */
+    margin-bottom: 0.75rem; /* 12px */
     overflow: hidden;
     transition: all 0.3s ease;
 }
 
 .faq-question {
-    padding: 16px 20px;
+    padding: 1rem 1.25rem; /* 16px 20px */
     cursor: pointer;
     font-weight: 600;
     display: flex;
@@ -946,8 +940,12 @@ h2 {
     align-items: center;
 }
 
+
+/* HAAHHAHAHAHAHAHAHA */
+
+/* ---------- FAQ ---------- */
 .faq-answer {
-    padding: 0 20px;
+    padding: 0 1.25rem; /* 20px */
     max-height: 0;
     overflow: hidden;
     transition: all 0.3s ease;
@@ -955,37 +953,35 @@ h2 {
 }
 
 .faq-answer.open {
-    padding: 16px 20px;
-    max-height: 200px;
+    padding: 1rem 1.25rem; /* 16px 20px */
+    max-height: 12.5rem; /* 200px */
 }
 
 .faq-icon {
-    font-size: 24px;
+    font-size: 1.5rem; /* 24px */
     line-height: 1;
 }
 
+/* ---------- CURVE SECTION ---------- */
 .curve {
-    /* position: relative; */
-    /* This makes .curve the positioning container */
     width: 100%;
     overflow: hidden;
-    /* Ensures nothing leaks outside */
 }
-
-
 
 .curve-text h1 {
     font-family: "Bricolage Grotesque", sans-serif;
-    font-size: 48px;
+    font-size: 3rem; /* 48px */
     font-weight: 700;
     line-height: 120%;
-    letter-spacing: -2px;
+    letter-spacing: -0.125rem; /* -2px */
 }
+
 .curve-text p a {
     color: white;
     cursor: pointer;
 }
 
+/* ---------- BUTTONS ---------- */
 #white_button {
     background: white;
     color: var(--primary-color);
@@ -995,31 +991,31 @@ h2 {
 .buttons {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 0.625rem; /* 10px */
 }
 
 #transparent_btn {
     background: transparent;
-    border: 2px solid white;
+    border: 0.125rem solid white; /* 2px */
     color: white;
 }
 
 .email a {
     color: white;
-    font-size: 17px;
+    font-size: 1.0625rem; /* 17px */
 }
 
+/* ---------- BADGES ---------- */
 .badge {
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'TT Hoves Pro', sans-serif;
-    padding: 9px 30px;
-    border-radius: 35px;
+    padding: 0.5625rem 1.875rem; /* 9px 30px */
+    border-radius: 2.1875rem; /* 35px */
     text-align: center;
     width: max-content;
     margin: auto;
-
 }
 
 .brain-badge {
@@ -1047,35 +1043,33 @@ h2 {
     color: #F5D43C;
 }
 
-
-/* KEYFRAMES */
+/* ---------- KEYFRAMES ---------- */
 @keyframes fadeIn {
     from {
         opacity: 0;
         z-index: -1;
     }
-
     to {
         opacity: 1;
         z-index: -1;
     }
 }
 
-/* MEDIA SCREEN WIDTH */
-@media (max-width: 890px) {
+/* ---------- MEDIA QUERIES ---------- */
+@media (max-width: 55.625rem) { /* 890px */
     .hero-section {
         flex-direction: column;
         text-align: center;
         height: auto;
         width: 100%;
-        margin-top: 120px;
-        padding: 20px;
+        margin-top: 7.5rem; /* 120px */
+        padding: 1.25rem; /* 20px */
     }
 
     .left-hero-section,
     .right-hero-section {
         width: 100%;
-        padding: 10px;
+        padding: 0.625rem; /* 10px */
         align-items: center;
         text-align: center;
     }
@@ -1090,25 +1084,23 @@ h2 {
 
     .hero-text p {
         text-align: center;
-        font-size: 16px;
+        font-size: 1rem; /* 16px */
     }
 
     .hero-buttons {
-
         flex-direction: column;
     }
 
     .service-section {
         flex-direction: column;
-        padding: 20px;
+        padding: 1.25rem; /* 20px */
     }
 
     .cards {
         flex-wrap: wrap;
     }
 
-    h1,
-    h2 {
+    h1, h2 {
         text-align: center;
     }
 
@@ -1117,19 +1109,19 @@ h2 {
     }
 
     .switch h1 {
-        font-size: 43px;
-        padding: 0 20px;
+        font-size: 2.6875rem; /* 43px */
+        padding: 0 1.25rem; /* 20px */
     }
 
     .switch p {
-        font-size: 16px;
-        padding: 0 30px;
+        font-size: 1rem; /* 16px */
+        padding: 0 1.875rem; /* 30px */
     }
 
     .joble h2 {
-        font-size: 43px;
+        font-size: 2.6875rem; /* 43px */
         font-family: 'Bricolage Grotesque', sans-serif;
-        letter-spacing: -2px;
+        letter-spacing: -0.125rem; /* -2px */
     }
 
     .landing h3 {
@@ -1137,17 +1129,17 @@ h2 {
     }
 
     .results h1 {
-        font-size: 43px;
-        padding: 0 20px;
+        font-size: 2.6875rem; /* 43px */
+        padding: 0 1.25rem; /* 20px */
     }
 
     .result-cards .result-card {
         max-height: fit-content;
-        padding: 20px;
+        padding: 1.25rem; /* 20px */
     }
 
     .results .mileage {
-        font-size: 14px;
+        font-size: 0.875rem; /* 14px */
         text-align: center;
     }
 
@@ -1156,7 +1148,7 @@ h2 {
     }
 
     .step {
-        padding: 10px;
+        padding: 0.625rem; /* 10px */
         max-width: 70%;
     }
 
@@ -1166,7 +1158,7 @@ h2 {
     }
 
     .roi h1 {
-        font-size: 43px;
+        font-size: 2.6875rem; /* 43px */
     }
 
     .roi_math {
@@ -1174,11 +1166,11 @@ h2 {
     }
 
     .example {
-        margin-top: 20px;
+        margin-top: 1.25rem; /* 20px */
     }
 
     .compliance h1 {
-        font-size: 43px;
+        font-size: 2.6875rem; /* 43px */
     }
 
     .features-section {
@@ -1206,7 +1198,7 @@ h2 {
     }
 
     .pricing-card p {
-        font-size: 14px;
+        font-size: 0.875rem; /* 14px */
     }
 
     .video-container {
@@ -1218,14 +1210,14 @@ h2 {
     }
 
     .vid-text h2 {
-        font-size: 35px;
+        font-size: 2.1875rem; /* 35px */
         text-align: center;
     }
 
     .vid-text p {
-        font-size: 12px;
+        font-size: 0.75rem; /* 12px */
         font-family: 'TT Hoves Pro', sans-serif;
-        padding: 10px 15px;
+        padding: 0.625rem 0.9375rem; /* 10px 15px */
     }
 
     .video-container {
@@ -1233,7 +1225,7 @@ h2 {
     }
 
     .vid-button {
-        margin: 30px auto;
+        margin: 1.875rem auto; /* 30px */
     }
 
     .video-container .type_button {
@@ -1251,59 +1243,63 @@ h2 {
     }
 
     .testimonials h1 {
-        font-size: 30px;
+        font-size: 1.875rem; /* 30px */
     }
 
     .proof {
         width: 90%;
-        font-size: 12px;
-        line-height: 20px;
+        font-size: 0.75rem; /* 12px */
+        line-height: 1.25rem; /* 20px */
         font-weight: 500;
     }
 
     .faq {
-        padding: 0 20px;
+        padding: 0 1.25rem; /* 20px */
     }
 
     .curve .desktop {
         display: none;
     }
-    /* .curve .mobile {
-        display: block;
-    } */
+
     .curve-text h1 {
-        line-height: 35px;
-        font-size: 32px;
+        line-height: 2.1875rem; /* 35px */
+        font-size: 2rem; /* 32px */
     }
+
     .curve-text .buttons {
         flex-direction: column;
     }
-    .curve-text .type_button{
+
+    .curve-text .type_button {
         margin-top: 0;
     }
+
     .roi-content {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 2rem; /* adds space between text/list/button */
-  }
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
 
-  .roi-text {
-    order: 1;
-    width: 100%;
-  }
+    .roi-text {
+        order: 1;
+        width: 100%;
+    }
 
-  .list-items {
-    order: 2;
-    width: 100%;
-  }
+    .list-items {
+        order: 2;
+        width: 100%;
+    }
 
-  /* move button below the list */
-  .roi-text button {
-    order: 3;
-    align-self: flex-start;
-    margin-top: 1rem;
-  }
+    .roi-text button {
+        order: 3;
+        align-self: flex-start;
+        margin-top: 1rem;
+    }
 }
+
+
+/* HAHAHAHAHAHA  */
+
 .eclipsed-bg {
   position: absolute;
   top: 0; /* just under navbar */

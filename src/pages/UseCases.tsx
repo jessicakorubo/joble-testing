@@ -307,8 +307,8 @@ Would you like to reschedule or keep it?"`,
                                     01
                                 </div>
                             </div>
-                         
-                             <div className="team-content">
+
+                            <div className="team-content">
                                 <h3>Less busywork</h3>
                                 <p>Follow-ups done for you. </p>
                             </div>
@@ -319,7 +319,7 @@ Would you like to reschedule or keep it?"`,
                                     01
                                 </div>
                             </div>
-                              <div className="team-content">
+                            <div className="team-content">
                                 <h3>One place for truth</h3>
                                 <p>Transcripts, outcomes, and tasks in one timeline. </p>
                             </div>
@@ -386,40 +386,46 @@ Would you like to reschedule or keep it?"`,
 
 
                     <div className="solutions-content">
-                        <div className="box" id='box-tab'>
-                            <img src={data.image} alt={data.title} />
-                            <div className="box-content">
-                                <h3>{data.title}</h3>
-                                <p>{data.description}</p>
-                                <div className="demo-button-container">
-                                    <button className="demo-btn">Try the live demo <img src={arrow_right} alt="" /> </button>
+                        <div className="first-box-con">
+                            <div className="box" id='box-tab'>
+                                <img src={data.image} alt={data.title} />
+                                <div className="box-content">
+                                    <h3>{data.title}</h3>
+                                    <p>{data.description}</p>
+                                    <div className="demo-button-container">
+                                        <button className="demo-btn">Try the live demo <img src={arrow_right} alt="" /> </button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="box">
-                            <h4>What it Does</h4>
-                            <ul>{data.whatItDoes.map((item, i) => <li key={i}>{item}</li>)}</ul>
+                            <div className="box">
+                                <h4>What it Does</h4>
+                                <ul>{data.whatItDoes.map((item, i) => <li key={i}>{item}</li>)}</ul>
+                            </div>
+
+                            <div className="box">
+                                <h4>Who it's for</h4>
+                                <ul>{data.whoItsFor.map((item, i) => <li key={i}>{item}</li>)}</ul>
+                            </div>
+
                         </div>
 
-                        <div className="box">
-                            <h4>Who it's for</h4>
-                            <ul>{data.whoItsFor.map((item, i) => <li key={i}>{item}</li>)}</ul>
+                        <div className="second-box-con">
+                            <div className="box">
+                                <h4>Measurable outcomes</h4>
+                                <ul>{data.outcomes.map((item, i) => <li key={i}>{item}</li>)}</ul>
+                            </div>
+
+                            <div className="box">
+                                <h4>Sample flow</h4>
+                                <p>{data.sampleFlow}</p>
+                            </div>
+
+                            <div className="box">
+                                <h4>Set-up in minutes</h4>
+                                <ul>{data.setup.map((item, i) => <li key={i}>{item}</li>)}</ul>
+                            </div>
                         </div>
 
-                        <div className="box">
-                            <h4>Measurable outcomes</h4>
-                            <ul>{data.outcomes.map((item, i) => <li key={i}>{item}</li>)}</ul>
-                        </div>
-
-                        <div className="box">
-                            <h4>Sample flow</h4>
-                            <p>{data.sampleFlow}</p>
-                        </div>
-
-                        <div className="box">
-                            <h4>Set-up in minutes</h4>
-                            <ul>{data.setup.map((item, i) => <li key={i}>{item}</li>)}</ul>
-                        </div>
                     </div>
                 </div>
 
@@ -530,7 +536,7 @@ Would you like to reschedule or keep it?"`,
 
                 <section className="roi-section">
                     <div className="roi-card">
-                        <div className="roi-content">
+                        <div className="roi-content roi-use-cases">
                             <div className="roi-text">
                                 <h2 className="roi-title">Quick ROI Math</h2>
                                 <p className="roi-subtitle">Clinic with 300 calls / month</p>
@@ -586,14 +592,14 @@ Would you like to reschedule or keep it?"`,
                             <p>Connect your calendar and CRM in 2 clicks</p>
                         </div>
                     </div>
-                    
-                    
+
+
                 </div>
-                <ResponsiveSVG 
-                        title='Ready to see it on your calls?'
-                        paragraph='Let’s stop the missed revenues and no-shows.'
-                        link="sales@joble.app"
-                    />
+                <ResponsiveSVG
+                    title='Ready to see it on your calls?'
+                    paragraph='Let’s stop the missed revenues and no-shows.'
+                    link="sales@joble.app"
+                />
 
             </MainLayout>
         </div>

@@ -123,13 +123,27 @@
 
 .solutions-content {
     display: flex;
+    flex-direction: column;
     gap: 2rem;
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-
+.first-box-con {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.second-box-con {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 .joble-icon-container {
     display: flex;
     justify-content: center;
@@ -350,7 +364,7 @@
 .howItWorks.use-cases-getting-started {
     margin-bottom: 100px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 890px) {
     .use-cases-page .cases-title {
         padding: 0rem 2rem;
     }
@@ -363,5 +377,13 @@
     .joble-dash {
         width: 80%;
     }
+    .roi-use-cases h2.roi-title{
+        font-size: 30px;
+    }
     
+}
+@media screen and (max-width: 1150px)  {
+    .roi-use-cases h2.roi-title{
+        font-size: 30px;
+    }
 }
