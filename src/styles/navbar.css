@@ -1,11 +1,9 @@
 
-
 .navbar-container {
     color: white;
     position: fixed;
     top: 0;
     z-index: 1000;
-    
     left: 0;
     width: 100%;
     /* full width */
@@ -17,18 +15,17 @@
 }
 .upper-nav {
     display: flex;
-    
     justify-content: flex-end;
-    /* margin-right: 100px; */
+    margin-right: 6rem;
     align-items: center;
-    gap: 40px;
+    gap: 4rem;
     padding: 10px 15px;
 }
 
 .top-nav-items {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 2rem;
     justify-content: center;
 }
 
@@ -79,7 +76,6 @@
     justify-content: space-between;
     padding: 15px 40px;
     gap: 50px;
-
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     font-family: Arial, sans-serif;
 }
@@ -87,7 +83,7 @@
 .navItems .main-menu {
     list-style: none;
     display: flex;
-    gap: 50px;
+    gap: 3rem;
     margin: 0;
     padding: 0;
 }
@@ -169,7 +165,7 @@
 
 .buttons {
     display: flex;
-    gap: 10px;
+    gap: 1.5rem;
 }
 
 .buttons .sales {

@@ -22,20 +22,37 @@ const ResponsiveSVG: React.FC<ResponsiveSVGProps> = ({
   return (
     <div className={`resp-svg ${className}`}>
       {isMobile ? (
-        <svg xmlns="http://www.w3.org/2000/svg" width="600" height="469" viewBox="0 0 430 469" fill="none">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 430 469"
+          preserveAspectRatio="none"
+          className="responsive-svg-shape"
+        >
           <path
             d="M-579 0H1009V320.513C358.128 518.652 11.1324 518.339 -579 320.513V0Z"
             fill="url(#paint0_linear_2474_4751)"
           />
           <defs>
-            <linearGradient id="paint0_linear_2474_4751" x1="215" y1="46.1681" x2="1148.83" y2="229.687" gradientUnits="userSpaceOnUse">
+            <linearGradient
+              id="paint0_linear_2474_4751"
+              x1="215"
+              y1="46.1681"
+              x2="1148.83"
+              y2="229.687"
+              gradientUnits="userSpaceOnUse"
+            >
               <stop stopColor="#07C0EA" />
               <stop offset="1" stopColor="white" />
             </linearGradient>
           </defs>
         </svg>
       ) : (
-        <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="391" viewBox="0 0 1440 391" fill="none">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 391"
+          preserveAspectRatio="none"
+          className="responsive-svg-shape"
+        >
           <path
             d="M0 0H1440V283.256C849.789 427.028 535.133 426.801 0 283.256V0Z"
             fill="url(#paint0_linear_2208_15464)"
@@ -55,6 +72,7 @@ const ResponsiveSVG: React.FC<ResponsiveSVGProps> = ({
           </defs>
         </svg>
       )}
+
 
       <div className="absolute curve-text">
         <h1>{title}</h1>

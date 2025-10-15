@@ -6,6 +6,12 @@
     z-index: 0;
     /* SVG stays in the background */
 }
+.responsive-svg-shape {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .absolute {
     position: absolute;
     top: 50%;
