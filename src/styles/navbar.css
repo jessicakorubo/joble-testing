@@ -1,280 +1,265 @@
-
-.navbar-container {
-    color: white;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    left: 0;
-    width: 100%;
-    /* full width */
+:root {
+  --primary-color: #07C0EA;
+  --nav-bg: rgba(0,45,86,0.98);
+  --navbar-height-desktop: 72px;
+  --navbar-height-tablet: 64px;
+  --navbar-height-mobile: 56px;
 }
 
-/* UPPER NAV */
+/* Container */
+.navbar-container {
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 1100;
+  left: 0;
+  width: 100%;
+  pointer-events: auto;
+}
+
+/* ===== UPPER NAV ===== */
 .upper-nav-con {
-    background-color: #002D56;
+  background-color: #002D56;
 }
 .upper-nav {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 6rem;
-    align-items: center;
-    gap: 4rem;
-    padding: 10px 15px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 6rem;
+  align-items: center;
+  gap: 4rem;
+  padding: 10px 15px;
+  box-sizing: border-box;
 }
 
 .top-nav-items {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
 }
-
 .top-nav-items a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    transition: color 0.3s ease;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
 }
+.top-nav-items a:hover { color: var(--text-color); }
 
-.top-nav-items a:hover {
-    color: var(--text-color);
-}
-
+/* Search box */
 .search {
-    display: flex;
-    align-items: center;
-    width: 300px;
-    gap: 10px;
-    background: rgba(7, 192, 234, 0.3);
-    /* 0.3 = 30% opacity */
-    padding: 5px 10px;
-    border-radius: 25px;
+  display: flex;
+  align-items: center;
+  width: 300px;
+  gap: 10px;
+  background: rgba(7, 192, 234, 0.18);
+  padding: 6px 10px;
+  border-radius: 25px;
 }
-
 .search input {
-    background: transparent;
-    border: none;
-    width: 80%;
-    outline: none;
-    color: white;
+  background: transparent;
+  border: none;
+  width: 100%;
+  outline: none;
+  color: white;
+  font-size: 14px;
 }
+.search-icon { display:flex; align-items:center; }
 
-.search input::placeholder {
-    color: white;
-    opacity: 0.9;
-    /* Slightly transparent placeholder */
-}
-
-
-
+/* ===== MAIN NAVBAR ===== */
 .navbar {
-    z-index: 1000;
-    /* ensures it stays above other content */
-  backdrop-filter: blur(5px); /* gives a frosted glass look */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 40px;
-    gap: 50px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-    font-family: Arial, sans-serif;
+  z-index: 1101;
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 40px;
+  gap: 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  font-family: Arial, sans-serif;
+  background: transparent;
+  box-sizing: border-box;
+  min-height: var(--navbar-height-desktop);
 }
 
+/* layout rows for easier responsive control */
+.left-row { display:flex; align-items:center; gap:12px; }
+.center-row { display:flex; align-items:center; flex:1; justify-content:center; }
+.right-row { display:flex; align-items:center; gap:12px; }
+
+/* Menu */
 .navItems .main-menu {
-    list-style: none;
-    display: flex;
-    gap: 3rem;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
 }
-.navItems ul li.dropdown {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
+.navItems ul li { position: relative; }
 
+/* Dropdown */
 .dropdown-menu {
   display: none;
   position: absolute;
   top: 120%;
-  padding: 20px;
   left: 0;
   background: white;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  padding: 0.75rem 0;
-  min-width: 180px;
-  z-index: 100;
+  min-width: 200px;
+  padding: .5rem 0;
+  z-index: 1200;
 }
-.dropdown-menu h5 {
-    color: rgb(24, 17, 161);
-    font-size: 16px;
-}
-.dropdown-menu ul {
-  background: #F9FAFB;
-  width: 60%;
-  display: flex;
-  padding: 0;
-  justify-content: flex-start;
-  flex-direction: column;
-  margin: auto;
-  border-radius: 20px;
-}
+.dropdown-menu ul { display:flex; flex-direction:column; gap:0; padding:0; margin:0; }
+.dropdown-menu li a { display:block; padding:.5rem 1rem; color:#333; text-decoration:none; }
+.dropdown:hover .dropdown-menu { display:block; }
 
-.dropdown-menu li {
-  display: block;
-  padding: 0;
-}
-
-.dropdown-menu li a {
-  display: block;
-  padding: 0.5rem 1rem;
-  color: #333;
-  text-decoration: none;
-  transition: background 0.2s ease;
-}
-
-/* Show dropdown on hover */
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-/* Optional: Add a small arrow indicator */
-.dropdown > a::after {
-  content: "";
-  margin-left: 6px;
-  margin-bottom: 2px;
-  border: solid #000;
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  padding: 3px;
-  transform: rotate(45deg);
-}
-
+/* Nav links */
 .navItems ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    font-size: 16px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 16px;
 }
+.navItems ul li a:hover { color: var(--primary-color); }
 
-.navItems ul li a:hover {
-    color: var(--primary-color);
-    /* Change to your desired hover color */
-}
-
-.buttons {
-    display: flex;
-    gap: 1.5rem;
-}
-
+/* Buttons */
+.buttons { display:flex; gap:1rem; align-items:center; }
 .buttons .sales {
-    background-color: transparent;
-    border: 0.5px solid var(--primary-color);
-    /* Primary color */
-    color: var(--primary-color);
-    padding: 12px 16px;
-    border-radius: 7px;
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 16px;
+  background-color: transparent;
+  border: 0.5px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 9px 14px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
 }
-
-.buttons .sales:hover {
-    box-shadow: inset 0 0 5px rgba(0, 123, 255, 0.5);
-}
-
 .buttons .try_now {
-    background-color: var(--primary-color);
-    /* Primary color */
-    border: none;
-    color: white;
-    padding: 12px 16px;
-    border-radius: 7px;
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 16px;
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+  padding: 9px 14px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
 }
 
-.buttons .try_now:hover {
-    background-color: var(--primary-color);
-    /* Darker shade on hover */
-    box-shadow: 0 4px 5px var(--primary-color);
-}
+/* Logo */
+.icon { display:flex; align-items:center; flex-shrink:0; margin-right:8px; }
+.joble_logo { height: 40px; width: auto; }
 
-.icon {
-    flex-shrink: 0;
-    /* Prevent the icon from shrinking */
-    margin-right: 50px;
-    /* Space between icon and nav items */
-}
-
-.joble_logo {
-    height: 40px;
-    /* Adjust the height as needed */
-    width: auto;
-    /* Maintain aspect ratio */
-}
-
+/* Hamburger (hidden by default) */
 .hamburger {
+  display: none;
+  background: transparent;
+  border: none;
+  padding: 6px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  z-index: 1300; /* above mobile-menu */
+}
+
+/* Active link */
+.navItems ul .active-link { color: var(--primary-color) !important; }
+.mobile-menu {
     display: none;
-    /* Hidden by default, shown on small screens */
-    flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
 }
 
-.navItems ul .active-link{
-    color: var(--primary-color) !important;
-}
-
+/* MOBILE: <= 768px */
 @media (max-width: 768px) {
-    .upper-nav {
-        justify-content: space-between;
+  /* hide upper nav fully */
+  .upper-nav, .upper-nav-con { display: none; }
 
-    }
+  .navbar {
+    padding: 10px 16px;
+    min-height: var(--navbar-height-mobile);
+    align-items: center;
+  }
 
-    .search {
-        width: 200px;
-    }
+  /* center-row still present but menu hidden */
+  .navItems, .buttons { display: none; }
 
-    .top-nav-items {
-        display: none;
-        /* Hide top nav items on small screens */
-    }
+  /* hamburger visible */
+  .hamburger { display: inline-flex; }
 
-    .navbar {
+  /* logo smaller */
+  .joble_logo { height: 30px; }
 
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 15px 20px;
-        gap: 20px;
-    }
+  /* make sure container background is visible on mobile */
+  .navbar-container { background: var(--nav-bg); }
 
-    .navbar .navItems,
-    .navbar .buttons {
-        display: none;
-    }
+  /* mobile menu sits immediately below the navbar */
+  .mobile-menu {
+    position: fixed;
+    top: calc(var(--navbar-height-mobile));
+    left: 0;
+    width: 100%;
+    background: var(--nav-bg);
+    color: white;
+    transform: translateY(-10px) scaleY(0.98);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform .26s ease, opacity .26s ease;
+    z-index: 1250;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+    backdrop-filter: blur(6px);
+  }
+  .mobile-menu.open {
+    transform: translateY(0) scaleY(1);
+    opacity: 1;
+    pointer-events: auto;
+  }
 
-    
-    /* .navItems ul {
-        flex-direction: column;
-        gap: 15px;
-    }
-    .buttons {
-        flex-direction: column;
-        width: 100%;
-    }
-    .buttons .sales, .buttons .try_now {
-        width: 100%;
-        text-align: center;
-    }
-    .icon {
-        margin-right: 0;
-        margin-bottom: 10px; 
-    }
-    .hamburger {
-        display: flex;
-        justify-content: flex-end;
-    } */
+  .mobile-menu ul { list-style:none; padding:1rem 1.25rem; margin:0; display:flex; flex-direction:column; gap:1rem; }
+  .mobile-menu ul li a { color:white; font-size:16px; text-decoration:none; padding:.5rem 0; display:block; }
+  .mobile-menu ul li a:hover { color: var(--primary-color); }
+
+  .mobile-buttons { padding: 1rem 1.25rem; display:flex; flex-direction:column; gap:.75rem; }
+  .mobile-buttons .sales, .mobile-buttons .try_now { padding:.8rem; font-size:15px; border-radius:8px; }
+  .mobile-buttons .sales { border:1px solid var(--primary-color); background:transparent; color:var(--primary-color); }
+  .mobile-buttons .try_now { background:var(--primary-color); color:white; border:none; }
+}
+
+/* TABLET: 769px - 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* show upper nav but compress spacing */
+  .upper-nav { margin-right: 3rem; gap: 1.2rem; padding: 8px 12px; }
+
+  .navbar {
+    padding: 12px 20px;
+    min-height: var(--navbar-height-tablet);
+    gap: 12px;
+  }
+
+  /* Slightly smaller logo */
+  .joble_logo { height: 34px; }
+
+  /* Allow the center menu to wrap and center */
+  .center-row { justify-content: center; }
+  .navItems .main-menu {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* reduce font size a touch */
+  .navItems ul li a { font-size: 15px; }
+
+  /* Keep buttons visible but smaller */
+  .buttons .sales, .buttons .try_now { padding: 8px 12px; font-size: 14px; }
+
+  /* Ensure hamburger remains hidden on tablet (unless you want it visible) */
+  .hamburger { display: none; }
+
+  /* If space still too tight, allow menu to be scrollable horizontally */
+  .navItems { overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .navItems::-webkit-scrollbar { display: none; }
+}
+
+/* DESKTOP: > 1024px keep original layout but ensure min heights */
+@media (min-width: 1025px) {
+  .navbar { min-height: var(--navbar-height-desktop); }
 }

@@ -670,7 +670,7 @@ const Home = () => {
           <div className="value-gain">
             <h1>Who gets value on day one </h1>
             <div className="long-arrow"></div>
-            <h1>Gain</h1>
+            <h1 className="gainText">Gain</h1>
           </div>
           <div className="gain-container">
             <div className="gain-list">

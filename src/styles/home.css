@@ -638,8 +638,6 @@ h2 {
 .feature-items div {
     padding: 0.625rem 1.25rem;
     /* 10px 20px */
-    background-color: #F8F8F8;
-    border-radius: 0.3125rem;
     /* 5px */
     margin-top: 0.625rem;
     /* 10px */
@@ -700,6 +698,7 @@ h2 {
     border-radius: 1.5rem;
     /* 24px */
     min-height: 15.625rem;
+    height: 20rem;
     /* 250px */
     max-width: 18.75rem;
     /* 300px */
@@ -1188,6 +1187,8 @@ h2 {
 .company_logos {
     display: flex;
     gap: 1rem;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 .company_logos img {
@@ -1217,7 +1218,7 @@ h2 {
         text-align: center;
         height: auto;
         width: 100%;
-        margin-top: 7.5rem;
+        margin-top: 10.5rem;
         /* 120px */
         padding: 1.25rem;
         /* 20px */
@@ -1235,9 +1236,16 @@ h2 {
     .hero-text h1 {
         text-align: center;
     }
-
+    .outbound-section {
+        padding: 0.3rem;
+        font-size: 11px;
+        gap: 0.3rem;
+    }
     .outbound-line {
         text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .hero-text p {
@@ -1249,7 +1257,9 @@ h2 {
     .hero-buttons {
         flex-direction: column;
     }
-
+    .company_logos {
+        padding: 1rem;
+    }
     .services {
         width: 100%;
         display: flex;
@@ -1317,7 +1327,11 @@ h2 {
     .cards {
         flex-wrap: wrap;
     }
-
+    .card {
+        width: 65%;
+        margin: auto;
+        margin-bottom: 1.25rem;
+    }
     h1,
     h2 {
         text-align: center;
@@ -1381,7 +1395,9 @@ h2 {
         /* 10px */
         max-width: 70%;
     }
-
+    .stack {
+        width:90%;
+    }
     .step p {
         font-size: 'TT Hoves Pro', sans-serif;
         font-weight: 700;
@@ -1421,9 +1437,23 @@ h2 {
     .feature-selection::before {
         left: 0;
     }
-
+    .value-gain .long-arrow, .value-gain .gainText{
+        display: none;
+    }
+    .value-gain h1 {
+        font-size: 2.5rem;
+        padding: 0 1.25rem;
+    }
+    .gain-container {
+        overflow:hidden;
+    }
+    .gain-list ol {
+        display: flex;
+    }
     .pricing {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .pricing-card {
